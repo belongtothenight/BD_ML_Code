@@ -1,5 +1,6 @@
 # BD_ML_Code
 
+![Code Size](https://img.shields.io/github/languages/code-size/belongtothenight/BD_ML_Code) ![File Count](https://img.shields.io/github/directory-file-count/belongtothenight/BD_ML_Code/src) ![Repo Size](https://img.shields.io/github/repo-size/belongtothenight/BD_ML_Code)
 This repo contains all the codes from BD_ML course which is normally originally coded in Jupyter Notebook.
 
 ## File Description
