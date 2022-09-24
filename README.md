@@ -4,6 +4,24 @@
 
 This repo contains all the codes from BD_ML course which is normally originally coded in Jupyter Notebook.
 
+## Notice
+
+Scripts in this repo needs to be executed with IDE with the required libraries installed in local environment.
+
+## Develop Environment
+
+- Windows 11
+
+- Anaconda Jupyter Notebook
+  - Keras
+  - TensorFlow
+
+- Python
+  - pandas
+  - numpy
+  - sklearn
+  - matplotlib
+
 ## File Description
 
 | No. | Filename                             | Description                                                                                                                             |
