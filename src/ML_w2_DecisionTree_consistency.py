@@ -1,12 +1,11 @@
 import pandas as pd
 import numpy as np
-from os import system, getcwd
+from os import system, getcwd, startfile
 from os.path import join
 from time import time
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import confusion_matrix
-from sklearn.metrics import plot_confusion_matrix
 from sklearn.metrics import ConfusionMatrixDisplay
 from matplotlib import pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
@@ -110,7 +109,7 @@ class decissionTreeOperation():
         self.prepare_data()
         self.training_and_testing()
 
-    def multi_run(self, n=10):
+    def multi_run(self, n=10, fign=1):
         start = time()
         self.prepare_data()
         self.confusion_matrix = []
@@ -146,7 +145,7 @@ class decissionTreeOperation():
             self.re_confusion_matrix = np.array(
                 [self.tp, self.tn, self.fp, self.fn])
 
-            self.fig, self.axs = plt.subplots(2, 2)
+            self.fig, self.axs = plt.subplots(2, 2, figsize=(3.2, 2.4))
             self.fig.suptitle(
                 'Histogram for {0} times of execution taking {1:.2f} seconds. \n(avg/min/max/mid/std/var)'.format(n, end-start))
             for i in range(0, 4, 1):
@@ -174,27 +173,50 @@ class decissionTreeOperation():
             # plt.subplot_tool() # adjust subplots sizes
             plt.subplots_adjust(left=0.05, bottom=0.08,
                                 right=0.95, top=0.9, wspace=0.1, hspace=0.3)
-            plt.show()
+            manager = plt.get_current_fig_manager()
+            manager.full_screen_toggle()
+            plt.show(block=False)
+            plt.pause(0.1)
+            plt.savefig(
+                './pic/ML_DL_w2_DecisionTree_consistency_Figure_{0}.png'.format(fign), dpi=600)
+            plt.close()
 
 
 if __name__ == "__main__":
     system('cls')
     print('[LOG] Start executing script...\n')
-    i = 0
     while True:
-        runs = input('How many times do you want to execute? ')
+        try:
+            i = input(
+                'Input the number of first picture should be named with. "q" to quit.\nEntry: ')
+            i = int(i)
+            flag = True
+            break
+        except:
+            if i == 'q':
+                flag = False
+                break
+            print('Input error! Please input again.')
+            continue
+    while flag == True:
+        runs = input(
+            'Input how many times do you want to execute. "q" to quit.\nFormat: 10.20.30\nEntry: ')
         if runs == 'q':
             break
+        runs = runs.split('.')
         try:
-            runs = int(runs)
+            for x in runs:
+                x = int(x)
         except:
             print('Please enter a number')
             continue
-        i += 1
-        print(
-            '\n[LOG] Start executing {0} times...===============\n'.format(runs))
-        dto = decissionTreeOperation()
-        dto.multi_run(runs)
-        print(
-            '\n[LOG] Execution {0} times finished.==============\n'.format(runs))
+        for run in runs:
+            print(
+                '\n[LOG] Start executing {0} times...===============\n'.format(run))
+            dto = decissionTreeOperation()
+            dto.multi_run(int(run), i)
+            print(
+                '\n[LOG] Execution {0} times finished.==============\n'.format(run))
+            i += 1
+    startfile(join(getcwd(), 'pic'))
     print('\n[LOG] Done executing script...')
