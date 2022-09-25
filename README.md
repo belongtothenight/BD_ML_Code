@@ -8,7 +8,7 @@ This repo contains all the codes from BD_ML course which is normally originally 
 
 Scripts in this repo needs to be executed with IDE with the required libraries installed in local environment.
 
-## Develop Environment
+## Development Environment
 
 - Windows 11
 
