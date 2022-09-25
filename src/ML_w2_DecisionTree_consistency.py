@@ -212,11 +212,11 @@ if __name__ == "__main__":
             continue
         for run in runs:
             print(
-                '\n[LOG] Start executing {0} times...===============\n'.format(run))
+                '\n[LOG] Start executing {0}/{1} {2} times...===============\n'.format(runs.index(run)+1, len(runs), run))
             dto = decissionTreeOperation()
             dto.multi_run(int(run), i)
             print(
-                '\n[LOG] Execution {0} times finished.==============\n'.format(run))
+                '\n[LOG] Execution {0}/{1} {2} times finished.==============\n'.format(runs.index(run)+1, len(runs), run))
             i += 1
     startfile(join(getcwd(), 'pic'))
     print('\n[LOG] Done executing script...')
