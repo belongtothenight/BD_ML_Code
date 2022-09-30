@@ -33,8 +33,8 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 |  5  | BD_w3_OWID_COVID19_hw.ipynb                 | BD w3 Homework.                                                                                                                         |
 |  6  | ML_w3_BasicProgStructure_MoreModel.ipynb    | Add different models.                                                                                                                   |
 |  7  | ML_w3_BasicProgStructure_AddStdScaler.ipynb | Add scaler to preprocess data before using models.                                                                                      |
-|  8  | ML_w3_hw_q1.ipynb                           | Question is inside, output file in data/w3q1data/                                                                                       |
-|  9  | ML_w3_hw_q2.ipynb                           | Question is inside, output file in data/w3q2data/                                                                                       |
+|  8  | ML_w3_hw_q1.ipynb                           | Question inside, output file in data/w3q1data/                                                                                          |
+|  9  | ML_w3_hw_q2.ipynb                           | Question inside, output file in data/w3q2data/                                                                                          |
 
 ## Optional Code ideas
 
