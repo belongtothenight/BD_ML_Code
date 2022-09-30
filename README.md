@@ -24,13 +24,15 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 
 ## File Description
 
-| No. | Filename                          | Description                                                                                                                             |
-| :-: | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-|  1  | ML_w2_BasicProgStructure.ipynb    | Original Decision Tree algorithm demonstration in Jupyter Notebook.                                                                     |
-|  2  | ML_w2_DecisionTree_basic.py       | Perform single time of Decision Tree training and testing from tumor cell data.                                                         |
-|  3  | ML_w2_DecisionTree_consistency.py | Perform multiple times of Decision Tree training and testing from tumor cell data in order to test Decision Tree algorithm consistency. |
-|  4  | BD_w3_OWID_COVID19_class.ipynb    | Code follows teacher's video instruction.                                                                                               |
-|  5  | BD_w3_OWID_COVID19_hw.ipynb       | BD w3 Homework.                                                                                                                         |
+| No. | Filename                                    | Description                                                                                                                             |
+| :-: | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+|  1  | ML_w2_BasicProgStructure.ipynb              | Original Decision Tree algorithm demonstration in Jupyter Notebook.                                                                     |
+|  2  | ML_w2_DecisionTree_basic.py                 | Perform single time of Decision Tree training and testing from tumor cell data.                                                         |
+|  3  | ML_w2_DecisionTree_consistency.py           | Perform multiple times of Decision Tree training and testing from tumor cell data in order to test Decision Tree algorithm consistency. |
+|  4  | BD_w3_OWID_COVID19_class.ipynb              | Code follows teacher's video instruction.                                                                                               |
+|  5  | BD_w3_OWID_COVID19_hw.ipynb                 | BD w3 Homework.                                                                                                                         |
+|  6  | ML_w3_BasicProgStructure_MoreModel.ipynb    | Add different models.                                                                                                                   |
+|  7  | ML_w3_BasicProgStructure_AddStdScaler.ipynb | Add scaler to preprocess data before using models.                                                                                      |
 
 ## Optional Code ideas
 
