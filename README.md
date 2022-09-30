@@ -2,7 +2,7 @@
 
 ![Repo Size](https://img.shields.io/github/repo-size/belongtothenight/BD_ML_Code) ![Code Size](https://img.shields.io/github/languages/code-size/belongtothenight/BD_ML_Code) ![File Count](https://img.shields.io/github/directory-file-count/belongtothenight/BD_ML_Code/src) ![Commit Per Month](https://img.shields.io/github/commit-activity/m/belongtothenight/BD_ML_Code)
 
-This repo contains all the codes from BD_ML course which is normally originally coded in Jupyter Notebook.
+This repo contains all the codes from BD_ML course.
 
 ## Notice
 
@@ -33,6 +33,8 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 |  5  | BD_w3_OWID_COVID19_hw.ipynb                 | BD w3 Homework.                                                                                                                         |
 |  6  | ML_w3_BasicProgStructure_MoreModel.ipynb    | Add different models.                                                                                                                   |
 |  7  | ML_w3_BasicProgStructure_AddStdScaler.ipynb | Add scaler to preprocess data before using models.                                                                                      |
+|  8  | ML_w3_hw_q1.ipynb                           | Question is inside, output file in data/w3q1data/                                                                                       |
+|  9  | ML_w3_hw_q2.ipynb                           | Question is inside, output file in data/w3q2data/                                                                                       |
 
 ## Optional Code ideas
 

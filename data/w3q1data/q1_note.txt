@@ -1,0 +1,11 @@
+For unscaled source data, the parameter having the most significant effect on the algorithms are as follows:
+DT: ccp_alpha, min_impurity.
+RF: min_impurity, ccp_alpha.
+KNN: n_neighbors.
+SVM: class_weight, max_iter.
+
+For scaled source data, the element having the most significant effect on the algorithms are as follows:
+DT: ccp_alpha, min_impurity.
+RF: min_impurity, ccp_alpha.
+KNN: n_neighbors, p.
+SVM: max_iter.

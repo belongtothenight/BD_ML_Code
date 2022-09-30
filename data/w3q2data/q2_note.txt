@@ -1,0 +1,7 @@
+For correlation:
+Feature "fractal_dim_mean" is most sensitive to cancer for "pearson" method.
+Feature "concave_pts_se" is most sensitive to cancer for "kendall" method.
+
+For standard scaler:
+All four algorithms (DT, RF, KNN, SVC) has differences in their average accuracy output between unscaled and scaled methods.
+From the data, DT and RF is barely affected by scaling or not, but scaling has a significant effect on KNN and SVC.
