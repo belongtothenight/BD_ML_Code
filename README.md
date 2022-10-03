@@ -24,17 +24,19 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 
 ## File Description
 
-| No. | Filename                                    | Description                                                                                                                             |
-| :-: | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-|  1  | ML_w2_BasicProgStructure.ipynb              | Original Decision Tree algorithm demonstration in Jupyter Notebook.                                                                     |
-|  2  | ML_w2_DecisionTree_basic.py                 | Perform single time of Decision Tree training and testing from tumor cell data.                                                         |
-|  3  | ML_w2_DecisionTree_consistency.py           | Perform multiple times of Decision Tree training and testing from tumor cell data in order to test Decision Tree algorithm consistency. |
-|  4  | BD_w3_OWID_COVID19_class.ipynb              | Code follows teacher's video instruction.                                                                                               |
-|  5  | BD_w3_OWID_COVID19_hw.ipynb                 | BD w3 Homework.                                                                                                                         |
-|  6  | ML_w3_BasicProgStructure_MoreModel.ipynb    | Add different models.                                                                                                                   |
-|  7  | ML_w3_BasicProgStructure_AddStdScaler.ipynb | Add scaler to preprocess data before using models.                                                                                      |
-|  8  | ML_w3_hw_q1.ipynb                           | Question inside, output file in data/w3q1data/                                                                                          |
-|  9  | ML_w3_hw_q2.ipynb                           | Question inside, output file in data/w3q2data/                                                                                          |
+| No. | Filename                                                                                                                       | Description                                                                                                                             |
+| :-: | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+|  1  | ![ML_w2_BasicProgStructure.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w2_BasicProgStructure.ipynb) | Original Decision Tree algorithm demonstration in Jupyter Notebook.                                                                     |
+|  2  | ML_w2_DecisionTree_basic.py                                                                                                    | Perform single time of Decision Tree training and testing from tumor cell data.                                                         |
+|  3  | ML_w2_DecisionTree_consistency.py                                                                                              | Perform multiple times of Decision Tree training and testing from tumor cell data in order to test Decision Tree algorithm consistency. |
+|  4  | BD_w3_OWID_COVID19_class.ipynb                                                                                                 | Code follows teacher's video instruction.                                                                                               |
+|  5  | BD_w3_OWID_COVID19_hw.ipynb                                                                                                    | BD w3 Homework.                                                                                                                         |
+|  6  | ML_w3_BasicProgStructure_MoreModel.ipynb                                                                                       | Add different models.                                                                                                                   |
+|  7  | ML_w3_BasicProgStructure_AddStdScaler.ipynb                                                                                    | Add scaler to preprocess data before using models.                                                                                      |
+|  8  | ML_w3_hw_q1.ipynb                                                                                                              | Question inside, output file in data/w3q1data/                                                                                          |
+|  9  | ML_w3_hw_q2.ipynb                                                                                                              | Question inside, output file in data/w3q2data/                                                                                          |
+| 10  | BD_w3_OWID_COVID19_hw_adjusted.ipynb                                                                                           | Adjusted code based on hw last week and teacher's answer.                                                                               |
+| 11  | BD_w4_hw.ipynb                                                                                                                 | Different approach to display specified columns from the original dataset.                                                              |
 
 ## Optional Code ideas
 
