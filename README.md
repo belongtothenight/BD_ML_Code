@@ -40,6 +40,7 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 | 12  | [ML_w4_PrepareTrainingSetWithFewerCancer.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w4_PrepareTrainingSetWithFewerCancer.ipynb) | Showcase dropping some rows of cancer data can improve accuracy.                                                                        |
 | 13  | [ML_w4_hw_q1.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w4_hw_q1.ipynb)                                                         | Try tuning the ratio between cancer positive data and cancer negative data to acheive higher accuracy within sample set.                |
 | 14  | [ML_w4_hw_q2.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w4_hw_q2.ipynb)                                                         | Try removing some features of the original dataset to see whether this can improve accuracy within sample set.                          |
+| 15  | [ML_w5_TuningOnTrainData_BASIC.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w5_TuningOnTrainData_BASIC.ipynb)                     | W5 class material.                                                                                                                      |
 
 ## Optional Code ideas
 
