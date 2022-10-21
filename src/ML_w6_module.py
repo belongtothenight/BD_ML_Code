@@ -19,6 +19,10 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from matplotlib import pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
 
+'''
+Link to images: https://github.com/belongtothenight/BD_ML_Code/tree/main/pic/ML_w6_module
+'''
+
 
 class DataSetError(Exception):
     """Base class for other exceptions"""
