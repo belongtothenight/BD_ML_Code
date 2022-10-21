@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import copy as copy
 import statistics as stt
+import seaborn as sns
 from os import system, getcwd, startfile
 from os.path import join
 from time import time
@@ -31,8 +32,8 @@ class FileTypeError(Exception):
 
 class ML():
     # =========================================================================
-    # core function
-    def __init__(self, data_path, print_result=False):
+    # core
+    def __init__(self, data_path, plt_export_path, print_result=False):
         '''
         1. File validation check.
         2. Dataset validation check.
@@ -40,6 +41,7 @@ class ML():
         '''
         self.label_ratio = 0.5
         self.data_path = data_path
+        self.plt_export_path = plt_export_path
         if data_path.endswith('.data'):
             if self.data_path.endswith('wdbc.data'):
                 self.dataset = 1.1
@@ -112,12 +114,12 @@ class ML():
         # the line below can sometimes cause error
         TestSizeFrom0 = 1 - min(max_train0_size,
                                 X_0.shape[0] * (1 - Test_Size)) / X_0.shape[0]
-        print('Label Ratio: ', self.label_ratio)
-        print('Test Size: ', Test_Size)
-        print('Max Train Size: ', max_train0_size)
-        print('X_0 Size: ', X_0.shape[0])
-        print('X_1 Size: ', X_1.shape[0])
-        print('Test Size From 0: ', TestSizeFrom0)
+        # print('Label Ratio: ', self.label_ratio)
+        # print('Test Size: ', Test_Size)
+        # print('Max Train Size: ', max_train0_size)
+        # print('X_0 Size: ', X_0.shape[0])
+        # print('X_1 Size: ', X_1.shape[0])
+        # print('Test Size From 0: ', TestSizeFrom0)
         X_0_train, X_0_test = train_test_split(
             X_0, test_size=TestSizeFrom0, random_state=2018)
         X_1_train, X_1_test = train_test_split(
@@ -136,6 +138,13 @@ class ML():
             self.X_test = self.X_test.drop(columns=['Class'])
         print(self.X_train.columns) if print_result else None
         print(self.X_test.columns) if print_result else None
+
+    def preprocess_data_3(self, print_result=False):
+        '''
+        1. Drop columns to change ratio of features. (malignant)
+        See function "split_data_into_train_test" in "ML_w4_hw_q2.jpynb".
+        '''
+        pass
 
     def result_evaluation(self, y_test, y_pred, print_result=False):
         '''
@@ -167,7 +176,8 @@ class ML():
         4. Deploy SVM model.
         5. Deploy KNN model.
         ---------------------------------
-        Result = [model, parameter_state, label_ratio, accuracy, precision, recall, f1]
+        Result = [model, parameter_state, label_ratio,
+            accuracy, precision, recall, f1]
         '''
         result = []
 
@@ -225,7 +235,7 @@ class ML():
         return result
 
     # =========================================================================
-    # core extension function
+    # core routine
 
     def single_run(self, ratio=0.5, print_result=False):
         self.label_ratio = ratio
@@ -242,29 +252,240 @@ class ML():
         If serf.label_ratio < 0.3, error:
         _classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
         '''
-        result = []
+        self.r_default = []
+        self.r_balanced = []
+        self.min = min
+        self.max = max
+        self.inc = inc
+
         self.preprocess_data_1()
-        for i in np.arange(min, max, inc):
-            self.label_ratio = i * 0.01
+        runs = np.arange(self.min, self.max, self.inc)
+        for i in range(len(runs)):
+            print('Process: {0}/{1} {2:.2f}%'.format(i +
+                  1, len(runs), ((i+1)/len(runs)*100)), end='\r')
+            self.label_ratio = runs[i] * 0.01
             self.preprocess_data_2()
             r_default = self.deploy_model(default=True)
             r_balanced = self.deploy_model()
-            result.append(r_default)
-            result.append(r_balanced)
-        print(result) if print_result else None
-        return result
+            self.r_default += r_default
+            self.r_balanced += r_balanced
+        self.r_default = pd.DataFrame(self.r_default, columns=[
+            'model', 'parameter_state', 'label_ratio', 'accuracy', 'precision', 'recall', 'f1'])
+        self.r_balanced = pd.DataFrame(self.r_balanced, columns=[
+            'model', 'parameter_state', 'label_ratio', 'accuracy', 'precision', 'recall', 'f1'])
+        print('\nDefault: \n') if print_result else None
+        print(self.r_default) if print_result else None
+        print('\nBalanced: \n') if print_result else None
+        print(self.r_balanced) if print_result else None
+
+    # =========================================================================
+    # statistics
+
+    def st_describe(self, print_result=False):
+        '''
+        1. Describe full dataset
+        '''
+        self.r_default_describe = self.r_default.describe()
+        self.r_balanced_describe = self.r_balanced.describe()
+        print()
+        print('\nr_default_describe\n') if print_result else None
+        print(self.r_default_describe) if print_result else None
+        print('\nr_balanced_describe\n') if print_result else None
+        print(self.r_balanced_describe) if print_result else None
+
+    # =========================================================================
+    # plot
+
+    def plt_1(self, show_plot=False):
+        '''
+        Plot default model
+        x = recall
+        y = precision
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x='recall', y='precision',
+                     hue='model', data=self.r_default)
+        plt.savefig(self.plt_export_path + 'default_model_rp.png')
+        plt.show() if show_plot else None
+
+    def plt_2(self, show_plot=False):
+        '''
+        Plot default model
+        x = recall
+        y = precision
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x='recall', y='precision',
+                     hue='model', data=self.r_balanced)
+        plt.savefig(self.plt_export_path + 'balanced_model_rp.png')
+        plt.show() if show_plot else None
+
+    def plt_3_1(self, show_plot=False):
+        '''
+        Plot default model
+        x = idex
+        y = label_ratio
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_default.index,
+                     y=self.r_default.label_ratio, data=self.r_default)
+        plt.title('Default Model - Label Ratio')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'default_model_lr.png')
+        plt.show() if show_plot else None
+
+    def plt_3_2(self, show_plot=False):
+        '''
+        Plot default model
+        x = idex
+        y = accuracy
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_default.index,
+                     y=self.r_default.accuracy, data=self.r_default)
+        plt.title('Default Model - Accuracy')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'default_model_acc.png')
+        plt.show() if show_plot else None
+
+    def plt_3_3(self, show_plot=False):
+        '''
+        Plot default model
+        x = idex
+        y = precision
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_default.index,
+                     y=self.r_default.precision, data=self.r_default)
+        plt.title('Default Model - Precision')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'default_model_pre.png')
+        plt.show() if show_plot else None
+
+    def plt_3_4(self, show_plot=False):
+        '''
+        Plot default model
+        x = idex
+        y = recall
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_default.index,
+                     y=self.r_default.recall, data=self.r_default)
+        plt.title('Default Model - Recall')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'default_model_rec.png')
+        plt.show() if show_plot else None
+
+    def plt_3_5(self, show_plot=False):
+        '''
+        Plot default model
+        x = idex
+        y = f1
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_default.index,
+                     y=self.r_default.f1, data=self.r_default)
+        plt.title('Default Model - F1')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'default_model_f1.png')
+        plt.show() if show_plot else None
+
+    def plt_4_1(self, show_plot=False):
+        '''
+        Plot balanced model
+        x = idex
+        y = label_ratio
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_balanced.index,
+                     y=self.r_balanced.label_ratio, data=self.r_balanced)
+        plt.title('Balanced Model - Label Ratio')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'balanced_model_lr.png')
+        plt.show() if show_plot else None
+
+    def plt_4_2(self, show_plot=False):
+        '''
+        Plot balanced model
+        x = idex
+        y = accuracy
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_balanced.index,
+                     y=self.r_balanced.accuracy, data=self.r_balanced)
+        plt.title('Balanced Model - Accuracy')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'balanced_model_acc.png')
+        plt.show() if show_plot else None
+
+    def plt_4_3(self, show_plot=False):
+        '''
+        Plot balanced model
+        x = idex
+        y = precision
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_balanced.index,
+                     y=self.r_balanced.precision, data=self.r_balanced)
+        plt.title('Balanced Model - Precision')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'balanced_model_pre.png')
+        plt.show() if show_plot else None
+
+    def plt_4_4(self, show_plot=False):
+        '''
+        Plot balanced model
+        x = idex
+        y = recall
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_balanced.index,
+                     y=self.r_balanced.recall, data=self.r_balanced)
+        plt.title('Balanced Model - Recall')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'balanced_model_rec.png')
+        plt.show() if show_plot else None
+
+    def plt_4_5(self, show_plot=False):
+        '''
+        Plot balanced model
+        x = idex
+        y = f1
+        '''
+        plt.figure(figsize=(20, 10))
+        sns.lineplot(x=self.r_balanced.index,
+                     y=self.r_balanced.f1, data=self.r_balanced)
+        plt.title('Balanced Model - F1')
+        plt.xlabel('Index (label_ratio: {0}-{1})'.format(self.min, self.max))
+        plt.savefig(self.plt_export_path + 'balanced_model_f1.png')
+        plt.show() if show_plot else None
 
 
 if __name__ == "__main__":
     system('cls')
     print('[LOG] Start executing script...\n')
 
+    path1 = join(getcwd().rstrip('src'), 'data/wdbc.data').replace('\\', '/')
     path2 = join(getcwd().rstrip('src'),
                  'data/Pumpkin_Seeds_Dataset.arff').replace('\\', '/')
-    path1 = join(getcwd().rstrip('src'), 'data/wdbc.data').replace('\\', '/')
+    path3 = join(getcwd().rstrip('src'),
+                 'pic/ML_w6_module/plt_').replace('\\', '/')
 
-    ml = ML(path1)
+    ml = ML(path1, path3)
     # ml.single_run(print_result=True)
-    ml.multi_run(print_result=True)
+    ml.multi_run()
+    ml.st_describe()
+    ml.plt_1()
+    ml.plt_2()
+    ml.plt_3_1()
+    ml.plt_3_2()
+    ml.plt_3_3()
+    ml.plt_3_4()
+    ml.plt_3_5()
+    ml.plt_4_1()
+    ml.plt_4_2()
+    ml.plt_4_3()
+    ml.plt_4_4()
+    ml.plt_4_5()
 
     print('\n[LOG] Done executing script...')
