@@ -95,7 +95,7 @@ class ML():
         print(self.X) if print_result else None
         print(self.y) if print_result else None
 
-    def preprocess_data_2v1(self, print_result=False):
+    def preprocess_data_2(self, print_result=False):
         '''
         1. Umbalance data.
         2. Split data into train and test.
@@ -112,6 +112,12 @@ class ML():
         # the line below can sometimes cause error
         TestSizeFrom0 = 1 - min(max_train0_size,
                                 X_0.shape[0] * (1 - Test_Size)) / X_0.shape[0]
+        print('Label Ratio: ', self.label_ratio)
+        print('Test Size: ', Test_Size)
+        print('Max Train Size: ', max_train0_size)
+        print('X_0 Size: ', X_0.shape[0])
+        print('X_1 Size: ', X_1.shape[0])
+        print('Test Size From 0: ', TestSizeFrom0)
         X_0_train, X_0_test = train_test_split(
             X_0, test_size=TestSizeFrom0, random_state=2018)
         X_1_train, X_1_test = train_test_split(
@@ -224,7 +230,7 @@ class ML():
     def single_run(self, ratio=0.5, print_result=False):
         self.label_ratio = ratio
         self.preprocess_data_1()
-        self.preprocess_data_2v1()
+        self.preprocess_data_2()
         r_default = self.deploy_model(default=True)
         r_balanced = self.deploy_model()
         print(r_default) if print_result else None
@@ -240,7 +246,7 @@ class ML():
         self.preprocess_data_1()
         for i in np.arange(min, max, inc):
             self.label_ratio = i * 0.01
-            self.preprocess_data_2v1()
+            self.preprocess_data_2()
             r_default = self.deploy_model(default=True)
             r_balanced = self.deploy_model()
             result.append(r_default)
@@ -258,7 +264,7 @@ if __name__ == "__main__":
     path1 = join(getcwd().rstrip('src'), 'data/wdbc.data').replace('\\', '/')
 
     ml = ML(path1)
-    ml.single_run(print_result=True)
+    # ml.single_run(print_result=True)
     ml.multi_run(print_result=True)
 
     print('\n[LOG] Done executing script...')
