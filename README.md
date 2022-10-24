@@ -45,6 +45,7 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 | 17  | [ML_w6_Homework_wdbc.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w6_Homework_wdbc.ipynb)                                         | ML result analysis with wdbc cancer cell dataset.                                                                                       |
 | 18  | [ML_w6_Homework_Pumpkin.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w6_Homework_Pumpkin.ipynb)                                   | ML result analysis with Pumpkin seed dataset.                                                                                           |
 | 19  | [ML_w6_module.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w6_module.py)                                                             | Modulize w6 homeworks.                                                                                                                  |
+| 20  | [BD_w7_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w7_hw.ipynb)                                                                                                                            |                                                                                                                                         |
 
 ## Optional Code ideas
 
