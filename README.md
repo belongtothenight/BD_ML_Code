@@ -46,6 +46,7 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 | 18  | [ML_w6_Homework_Pumpkin.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w6_Homework_Pumpkin.ipynb)                                   | ML result analysis with Pumpkin seed dataset.                                                                                           |
 | 19  | [ML_w6_module.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w6_module.py)                                                             | Modulize w6 homeworks.                                                                                                                  |
 | 20  | [BD_w7_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w7_hw.ipynb)                                                               | Analysis the cuases leading to the trend of "%death by cases"                                                                           |
+| 21  | [ML_w7_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w7_hw.ipynb)                                                               | Machine learning with mostly text data.                                                                                                 |
 
 ## Optional Code ideas
 
