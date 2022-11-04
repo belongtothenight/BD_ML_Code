@@ -86,4 +86,4 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
    7. scale ratio (dataset/python)
    8. label ratio (dataset/python)
    9. model (sklearn)
-   10. model parameters (sklearn)
+   10. model parameters (ex: classweight) (sklearn)
