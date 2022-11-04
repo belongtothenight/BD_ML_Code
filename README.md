@@ -56,6 +56,13 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 
 ## BD Process
 
+1. Prepare/Preprocess Data
+   1. Remove unused columns.
+   2. Convert datatype. (str2timestamp, str2int, str2float, obj2str...)
+2. Plot Data (scatter not plot)
+   1. Column to column.
+   2. Interaction between two column to column.
+
 ## ML Process
 
 1. Prepare/Preprocess Data
