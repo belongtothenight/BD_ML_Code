@@ -57,11 +57,29 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 ## ML Process
 
 1. Prepare/Preprocess Data
-   1. Read dataset from file.
-   2. Check feature (Xs) correlation with result (y). Not necessary, but might help reduce time and not misleading algorithm.
-   3. Deal with missing values (NAN/NA). <<pandas>>
-   4. Convert non-numirical data to numbers representing them. <mark>pandas</mark>
-   5. Balance out imbalance dataset. (balance: one category of result like y=0 has a lot more data(rows) than the other/others.)
-   6. Scale dataset. (sklearn)
+   1. Read dataset from file. (pandas/scipy.io.arff/python)
+   2. Check features (X) correlation with result (y). Not necessary, but might help reduce time and not misleading algorithm. (pandas)
+   3. Deal with missing values (NAN/NA). (pandas)
+   4. Convert non-numirical data to numbers representing them. (pandas)
+   5. (optional) Balance out imbalance dataset. (balance: one category of result like y=0 has a lot more data(rows) than the other/others.) (python)
+   6. Split features (X) and result (y). (python)
+   7. (optional) Scale dataset. (sklearn)
+   8. Split dataset into either train+test or train+cross-validation+test subsets. (random state is optional) (sklearn)
 2. Deploy Model
+   1. Select model. (sklearn->supervised/unsupervised)
+      1. Logistic Regression, LR.
+      2. Decision Tree, DT.
+      3. Random Forest, RF.
+      4. Support Vector Machine, SVM. (SVC)
+      5. K-Nearest Neighbor, KNN.
+   2. Train model. (sklearn->fit)
+   3. Test model. (sklearn->pred)
 3. Result Analysis
+   1. accuracy (result)
+   2. precision (result)
+   3. recall (result)
+   4. f1 (result)
+   5. scale ratio (dataset)
+   6. label ratio (dataset)
+   7. model (sklearn)
+   8. model parameters (sklearn)
