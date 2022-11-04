@@ -54,6 +54,8 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 2. ML_w3_MultiModelComparison.py : compare different models mentione in class.
 3. ML_w3_StdScalerPerformance.py : compare the difference with and without using scaler.
 
+## BD Process
+
 ## ML Process
 
 1. Prepare/Preprocess Data
@@ -75,11 +77,13 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
    2. Train model. (sklearn->fit)
    3. Test model. (sklearn->pred)
 3. Result Analysis
-   1. accuracy (result)
-   2. precision (result)
-   3. recall (result)
-   4. f1 (result)
-   5. scale ratio (dataset)
-   6. label ratio (dataset)
-   7. model (sklearn)
-   8. model parameters (sklearn)
+   1. accuracy (sklearn)
+   2. precision (sklearn)
+   3. recall (sklearn)
+   4. f1 (sklearn)
+   5. confusion matrix (sklearn)
+   6. seperate result from different models (pandas->groupby)
+   7. scale ratio (dataset/python)
+   8. label ratio (dataset/python)
+   9. model (sklearn)
+   10. model parameters (sklearn)
