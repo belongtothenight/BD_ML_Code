@@ -53,3 +53,15 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 1. ML_w2_DecisionTree_DevelopmentTrend.py : use the data gathered while looping the algorithm and display as bar chart or line graph.
 2. ML_w3_MultiModelComparison.py : compare different models mentione in class.
 3. ML_w3_StdScalerPerformance.py : compare the difference with and without using scaler.
+
+## ML Process
+
+1. Prepare/Preprocess Data
+   1. Read dataset from file.
+   2. Check feature (Xs) correlation with result (y). Not necessary, but might help reduce time and not misleading algorithm.
+   3. Deal with missing values (NAN/NA). <mark>pandas</mark>
+   4. Convert non-numirical data to numbers representing them. <mark>pandas</mark>
+   5. Balance out imbalance dataset. (balance: one category of result like y=0 has a lot more data(rows) than the other/others.)
+   6. Scale dataset. (sklearn)
+2. Deploy Model
+3. Result Analysis
