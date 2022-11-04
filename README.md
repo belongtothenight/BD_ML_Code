@@ -7,7 +7,7 @@ This repo contains all the codes from BD_ML course.
 ## Notice
 
 Scripts in this repo needs to be executed with IDE with the required libraries installed in local environment.<br><br>
-ANY USAGE OF THIS REPO NEED TO BE INFORMED BEFOREHAND.
+ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
 
 ## Development Environment
 
