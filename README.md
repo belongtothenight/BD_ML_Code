@@ -66,7 +66,7 @@ ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
 
 1. Prepare/Preprocess Data
    1. Read dataset from file. (pandas/scipy.io.arff/python)
-   2. Check features (X) correlation with result (y). Not necessary, but might help reduce time and not misleading algorithm. (pandas)
+   2. Check features (X) correlation with result (y), and drop features with low correlation. Not necessary, but might help reduce time and not misleading algorithm. (pandas)
    3. Deal with missing values (NAN/NA). (pandas)
    4. Convert non-numirical data to numbers representing them. (pandas)
    5. (optional) Balance out imbalance dataset. (balance: one category of result like y=0 has a lot more data(rows) than the other/others.) (python)
