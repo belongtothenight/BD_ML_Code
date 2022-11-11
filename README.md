@@ -46,6 +46,8 @@ ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
 | 19  | [ML_w6_module.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w6_module.py)                                                             | Modulize w6 homeworks.                                                                                                                  |
 | 20  | [BD_w7_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w7_hw.ipynb)                                                               | Analysis the cuases leading to the trend of "%death by cases"                                                                           |
 | 21  | [ML_w7_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w7_hw.ipynb)                                                               | Machine learning with mostly text data.                                                                                                 |
+| 22  | [BD_midterm.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_midterm.ipynb)                                                           | BD midterm answer.                                                                                                                      |
+| 23  | [ML_midterm.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_midterm.ipynb)                                                           | ML midterm answer.                                                                                                                      |
 
 ## Optional Code ideas
 
