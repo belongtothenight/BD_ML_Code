@@ -1,0 +1,323 @@
+,iso3c,country_name,year,time,time_unit,deaths
+0,ALB,Albania,2021,12,monthly,8740.0
+1,ALB,Albania,2022,6,monthly,-123
+2,DZA,Algeria,2020,12,monthly,56092
+3,AND,Andorra,2020,12,monthly,189983
+4,ATG,Antigua and Barbuda,2020,12,monthly,-89495.0
+5,ATG,Antigua and Barbuda,2021,12,monthly,50283
+6,ARG,Argentina,2020,12,monthly,225468
+7,ARM,Armenia,2020,12,monthly,-423134.0
+8,ARM,Armenia,2021,12,monthly,-423867.0
+9,ARM,Armenia,2022,9,monthly,-209328
+10,ABW,Aruba,2020,12,monthly,-458472.0
+11,ABW,Aruba,2021,12,monthly,-84596
+12,AUS,Australia,2020,53,weekly,-455507.0
+13,AUS,Australia,2021,52,weekly,-449250.0
+14,AUS,Australia,2022,30,weekly,-221897
+15,AUT,Austria,2020,53,weekly,-610348.0
+16,AUT,Austria,2021,52,weekly,-612006.0
+17,AUT,Austria,2022,42,weekly,-218950
+18,AZE,Azerbaijan,2020,12,monthly,-682328.0
+19,AZE,Azerbaijan,2021,12,monthly,-681097.0
+20,AZE,Azerbaijan,2022,8,monthly,-210620
+21,BHS,Bahamas,2020,12,monthly,-757393.0
+22,BHS,Bahamas,2021,12,monthly,63955
+23,BRB,Barbados,2020,12,monthly,-760339.0
+24,BRB,Barbados,2021,12,monthly,-760157.0
+25,BRB,Barbados,2022,8,monthly,-210829
+26,BLR,Belarus,2020,12,monthly,-738447.0
+27,BLR,Belarus,2021,3,monthly,37478
+28,BEL,Belgium,2020,53,weekly,-864151.0
+29,BEL,Belgium,2021,52,weekly,-880627.0
+30,BEL,Belgium,2022,41,weekly,-268795
+31,BLZ,Belize,2020,12,monthly,-992321.0
+32,BLZ,Belize,2021,12,monthly,93527
+33,BMU,Bermuda,2020,12,monthly,-994416.0
+34,BMU,Bermuda,2021,12,monthly,93670
+35,BOL,Bolivia,2020,12,monthly,-970732.0
+36,BOL,Bolivia,2021,12,monthly,-961294.0
+37,BOL,Bolivia,2022,1,monthly,-263512
+38,BIH,Bosnia,2020,12,monthly,-1039691.0
+39,BIH,Bosnia,2021,12,monthly,-1033991.0
+40,BIH,Bosnia,2022,6,monthly,-262759
+41,BRA,Brazil,2020,12,monthly,-836296.0
+42,BRA,Brazil,2021,12,monthly,-537498.0
+43,BRA,Brazil,2022,9,monthly,-32352
+44,BRN,Brunei,2020,12,monthly,4689287
+45,BGR,Bulgaria,2020,53,weekly,-2377753.0
+46,BGR,Bulgaria,2021,52,weekly,-2355027.0
+47,BGR,Bulgaria,2022,39,weekly,-20779
+48,CPV,Cabo Verde,2020,12,monthly,4945264
+49,CAN,Canada,2020,53,weekly,-2470475.0
+50,CAN,Canada,2021,52,weekly,-2474290.0
+51,CAN,Canada,2022,27,weekly,-36144
+52,CHL,Chile,2020,53,weekly,-3457323.0
+53,CHL,Chile,2021,52,weekly,-3447696.0
+54,CHL,Chile,2022,43,weekly,-711972
+55,COL,Colombia,2020,53,weekly,-2790118.0
+56,COL,Colombia,2021,52,weekly,-2735138.0
+57,COL,Colombia,2022,42,weekly,76198
+58,CRI,Costa Rica,2020,12,monthly,-3093139.0
+59,CRI,Costa Rica,2021,12,monthly,1668135
+60,HRV,Croatia,2020,53,weekly,-3114175.0
+61,HRV,Croatia,2021,52,weekly,-3109474.0
+62,HRV,Croatia,2022,39,weekly,74068
+63,CUB,Cuba,2020,12,monthly,-3163929.0
+64,CUB,Cuba,2021,12,monthly,1732944
+65,CYP,Cyprus,2020,53,weekly,-3275620.0
+66,CYP,Cyprus,2021,52,weekly,-3275191.0
+67,CYP,Cyprus,2022,40,weekly,63634
+68,CZE,Czechia,2020,53,weekly,-3261988.0
+69,CZE,Czechia,2021,52,weekly,-3254317.0
+70,CZE,Czechia,2022,38,weekly,70990
+71,DNK,Denmark,2020,53,weekly,-3391604.0
+72,DNK,Denmark,2021,52,weekly,-3390043.0
+73,DNK,Denmark,2022,43,weekly,71013
+74,DOM,Dominican Republic,2020,12,monthly,-3444427.0
+75,DOM,Dominican Republic,2021,10,monthly,1830236
+76,ECU,Ecuador,2020,53,weekly,-3442919.0
+77,ECU,Ecuador,2021,52,weekly,-3455470.0
+78,ECU,Ecuador,2022,40,weekly,83999
+79,EGY,Egypt,2020,12,monthly,-3455645.0
+80,EGY,Egypt,2021,12,monthly,-3389759.0
+81,EGY,Egypt,2022,8,monthly,127146
+82,SLV,El Salvador,2020,8,monthly,8616758
+83,EST,Estonia,2020,53,weekly,-4163467.0
+84,EST,Estonia,2021,52,weekly,-4160803.0
+85,EST,Estonia,2022,42,weekly,96977
+86,FRO,Faroe Islands,2020,12,monthly,-4179560.0
+87,FRO,Faroe Islands,2021,12,monthly,-4179498.0
+88,FRO,Faroe Islands,2022,9,monthly,96968
+89,FIN,Finland,2020,53,weekly,-4177445.0
+90,FIN,Finland,2021,52,weekly,-4176102.0
+91,FIN,Finland,2022,40,weekly,96894
+92,FRA,France,2020,53,weekly,-4160462.0
+93,FRA,France,2021,52,weekly,-4183029.0
+94,FRA,France,2022,41,weekly,108516
+95,GUF,French Guiana,2020,53,weekly,-4824732.0
+96,GUF,French Guiana,2021,52,weekly,-4824337.0
+97,GUF,French Guiana,2022,41,weekly,108689
+98,PYF,French Polynesia,2020,12,monthly,-4825529.0
+99,PYF,French Polynesia,2021,12,monthly,2576337
+100,GEO,Georgia,2020,12,monthly,-4824851.0
+101,GEO,Georgia,2021,12,monthly,-4815482.0
+102,GEO,Georgia,2022,6,monthly,106017
+103,DEU,Germany,2020,53,weekly,-4807027.0
+104,DEU,Germany,2021,52,weekly,-4789440.0
+105,DEU,Germany,2022,42,weekly,122186
+106,GIB,Gibraltar,2020,12,monthly,-5808481.0
+107,GIB,Gibraltar,2021,1,monthly,3087420
+108,GRC,Greece,2020,53,weekly,-5797785.0
+109,GRC,Greece,2021,52,weekly,-5787165.0
+110,GRC,Greece,2022,39,weekly,127982
+111,GRL,Greenland,2020,12,monthly,-5930730.0
+112,GRL,Greenland,2021,12,monthly,-5930718.0
+113,GRL,Greenland,2022,9,monthly,127961
+114,GLP,Guadeloupe,2020,53,weekly,-5930693.0
+115,GLP,Guadeloupe,2021,52,weekly,-5929896.0
+116,GLP,Guadeloupe,2022,41,weekly,128599
+117,GTM,Guatemala,2020,53,weekly,-5919446.0
+118,GTM,Guatemala,2021,52,weekly,-5898732.0
+119,GTM,Guatemala,2022,30,weekly,136483
+120,HKG,Hong Kong,2020,12,monthly,-6013467.0
+121,HKG,Hong Kong,2021,12,monthly,-6012779.0
+122,HKG,Hong Kong,2022,7,monthly,136683
+123,HUN,Hungary,2020,53,weekly,-6051188.0
+124,HUN,Hungary,2021,52,weekly,-6039392.0
+125,HUN,Hungary,2022,39,weekly,139395
+126,ISL,Iceland,2020,53,weekly,-6194331.0
+127,ISL,Iceland,2021,52,weekly,-6194342.0
+128,ISL,Iceland,2022,39,weekly,139379
+129,IRN,Iran,2020,53,weekly,-6054362.3
+130,IRN,Iran,2021,52,weekly,-6035531.2
+131,IRN,Iran,2022,40,weekly,223119
+132,IRL,Ireland,2020,12,monthly,-6564012.0
+133,IRL,Ireland,2021,12,monthly,-6561639.0
+134,IRL,Ireland,2022,9,monthly,222997
+135,ISR,Israel,2020,53,weekly,-6591125.0
+136,ISR,Israel,2021,52,weekly,-6590038.0
+137,ISR,Israel,2022,40,weekly,225085
+138,ITA,Italy,2020,53,weekly,-6529903.0
+139,ITA,Italy,2021,52,weekly,-6580553.0
+140,ITA,Italy,2022,35,weekly,227136
+141,JAM,Jamaica,2020,12,monthly,-7286092.0
+142,JAM,Jamaica,2021,11,monthly,3986692
+143,JPN,Japan,2020,12,monthly,-7258422.0
+144,JPN,Japan,2021,12,monthly,-7190677.0
+145,JPN,Japan,2022,8,monthly,173963
+146,JOR,Jordan,2020,12,monthly,-10798160.0
+147,JOR,Jordan,2021,12,monthly,2430364
+148,KAZ,Kazakhstan,2020,12,monthly,-8633835.0
+149,KAZ,Kazakhstan,2021,12,monthly,-8613091.0
+150,KAZ,Kazakhstan,2022,9,monthly,193828
+151,KOS,Kosovo,2020,12,monthly,-8792230.0
+152,KOS,Kosovo,2021,12,monthly,-8792198.0
+153,KOS,Kosovo,2022,9,monthly,196026
+154,KWT,Kuwait,2020,12,monthly,-8801370.0
+155,KWT,Kuwait,2021,12,monthly,4700679
+156,KGZ,Kyrgyzstan,2020,12,monthly,-8805508.0
+157,KGZ,Kyrgyzstan,2021,12,monthly,-8806292.0
+158,KGZ,Kyrgyzstan,2022,8,monthly,196933
+159,LVA,Latvia,2020,53,weekly,-8844659.0
+160,LVA,Latvia,2021,52,weekly,-8839504.0
+161,LVA,Latvia,2022,42,weekly,197762
+162,LBN,Lebanon,2020,12,monthly,-8870740.0
+163,LBN,Lebanon,2021,12,monthly,4741144
+164,LIE,Liechtenstein,2020,12,monthly,-8899074.0
+165,LIE,Liechtenstein,2021,12,monthly,-8899125.0
+166,LIE,Liechtenstein,2022,5,monthly,194363
+167,LTU,Lithuania,2020,53,weekly,-8895275.0
+168,LTU,Lithuania,2021,52,weekly,-8892134.0
+169,LTU,Lithuania,2022,39,weekly,195280
+170,LUX,Luxembourg,2020,53,weekly,-8939096.0
+171,LUX,Luxembourg,2021,52,weekly,-8939296.0
+172,LUX,Luxembourg,2022,39,weekly,195261
+173,MAC,Macao,2020,12,monthly,-8943740.0
+174,MAC,Macao,2021,12,monthly,-8943650.0
+175,MAC,Macao,2022,9,monthly,195175
+176,MYS,Malaysia,2020,12,monthly,-8945850.0
+177,MYS,Malaysia,2021,12,monthly,-8887788.0
+178,MYS,Malaysia,2022,9,monthly,209243
+179,MDV,Maldives,2020,12,monthly,18852546
+180,MLT,Malta,2020,53,weekly,-9112931.0
+181,MLT,Malta,2021,52,weekly,-9112944.0
+182,MLT,Malta,2022,42,weekly,208838
+183,MTQ,Martinique,2020,53,weekly,-9116726.0
+184,MTQ,Martinique,2021,52,weekly,-9115747.0
+185,MTQ,Martinique,2022,41,weekly,209424
+186,MUS,Mauritius,2020,12,monthly,-9119704.0
+187,MUS,Mauritius,2021,12,monthly,-9117490.0
+188,MUS,Mauritius,2022,6,monthly,209304
+189,MYT,Mayotte,2020,53,weekly,-9130518.0
+190,MYT,Mayotte,2021,52,weekly,-9130366.0
+191,MYT,Mayotte,2022,41,weekly,209530
+192,MEX,Mexico,2020,53,weekly,-8743400.0
+193,MEX,Mexico,2021,52,weekly,-8741166.0
+194,MEX,Mexico,2022,36,weekly,428943
+195,MDA,Moldova,2020,12,monthly,-9827955.0
+196,MDA,Moldova,2021,12,monthly,-9823285.0
+197,MDA,Moldova,2022,5,monthly,425537
+198,MCO,Monaco,2020,12,monthly,-9868677.0
+199,MCO,Monaco,2021,12,monthly,-9868605.0
+200,MCO,Monaco,2022,9,monthly,425510
+201,MNG,Mongolia,2020,12,monthly,-9869857.0
+202,MNG,Mongolia,2021,12,monthly,-9865848.0
+203,MNG,Mongolia,2022,9,monthly,425331
+204,MNE,Montenegro,2020,53,weekly,-9884828.0
+205,MNE,Montenegro,2021,52,weekly,-9884594.0
+206,MNE,Montenegro,2022,21,weekly,424963
+207,NLD,Netherlands,2020,53,weekly,-9871523.0
+208,NLD,Netherlands,2021,52,weekly,-9872716.0
+209,NLD,Netherlands,2022,43,weekly,432155
+210,NCL,New Caledonia,2020,12,monthly,-10042777.0
+211,NCL,New Caledonia,2021,12,monthly,5669828
+212,NZL,New Zealand,2020,53,weekly,-10043925.0
+213,NZL,New Zealand,2021,52,weekly,-10042327.0
+214,NZL,New Zealand,2022,42,weekly,432115
+215,NIC,Nicaragua,2020,12,monthly,21459978
+216,MKD,North Macedonia,2020,12,monthly,-10096222.0
+217,MKD,North Macedonia,2021,12,monthly,-10093114.0
+218,MKD,North Macedonia,2022,8,monthly,422027
+219,NOR,Norway,2020,53,weekly,-10121181.0
+220,NOR,Norway,2021,52,weekly,-10120487.0
+221,NOR,Norway,2022,43,weekly,421221
+222,OMN,Oman,2020,12,monthly,-10160311.0
+223,OMN,Oman,2021,12,monthly,-10158251.0
+224,OMN,Oman,2022,9,monthly,422871
+225,PSE,Palestine,2020,12,monthly,6355722
+226,PAN,Panama,2020,12,monthly,-10171323.0
+227,PAN,Panama,2021,10,monthly,5725579
+228,PRY,Paraguay,2020,12,monthly,-10190143.0
+229,PRY,Paraguay,2021,12,monthly,-10173164.0
+230,PRY,Paraguay,2022,8,monthly,426467
+231,PER,Peru,2020,53,weekly,-16954146.9
+232,PER,Peru,2021,52,weekly,-16934036.4
+233,PER,Peru,2022,40,weekly,-6330176
+234,PHL,Philippines,2020,12,monthly,-10291185.0
+235,PHL,Philippines,2021,12,monthly,-10025692.0
+236,PHL,Philippines,2022,5,monthly,551283
+237,POL,Poland,2020,53,weekly,-10821571.0
+238,POL,Poland,2021,52,weekly,-10788475.0
+239,POL,Poland,2022,43,weekly,606020
+240,PRT,Portugal,2020,53,weekly,-11292248.0
+241,PRT,Portugal,2021,52,weekly,-11293445.0
+242,PRT,Portugal,2022,39,weekly,609489
+243,PRI,Puerto Rico,2020,53,weekly,-11414866.0
+244,PRI,Puerto Rico,2021,52,weekly,-11414291.0
+245,PRI,Puerto Rico,2022,40,weekly,611027
+246,QAT,Qatar,2020,12,monthly,-11446949.0
+247,QAT,Qatar,2021,12,monthly,-11446802.0
+248,QAT,Qatar,2022,9,monthly,611191
+249,REU,Réunion,2020,53,weekly,-11449149.0
+250,REU,Réunion,2021,52,weekly,-11448618.0
+251,REU,Réunion,2022,41,weekly,611778
+252,ROU,Romania,2020,53,weekly,-11414455.0
+253,ROU,Romania,2021,52,weekly,-11382854.0
+254,ROU,Romania,2022,38,weekly,628681
+255,RUS,Russia,2020,12,monthly,-11427876.1
+256,RUS,Russia,2021,12,monthly,-11120953.0
+257,RUS,Russia,2022,9,monthly,788899
+258,KNA,Saint Kitts and Nevis,2020,12,monthly,-16958087.0
+259,KNA,Saint Kitts and Nevis,2021,12,monthly,-16958010.0
+260,KNA,Saint Kitts and Nevis,2022,8,monthly,-2602720
+261,VCT,Saint Vincent and the Grenadines,2020,12,monthly,-13566667.0
+262,VCT,Saint Vincent and the Grenadines,2021,12,monthly,7967016
+263,SMR,San Marino,2020,12,monthly,-13567625.0
+264,SMR,San Marino,2021,12,monthly,-13567656.0
+265,SMR,San Marino,2022,9,monthly,788805
+266,SRB,Serbia,2020,12,monthly,-13553388.0
+267,SRB,Serbia,2021,12,monthly,-13534337.0
+268,SRB,Serbia,2022,9,monthly,799366
+269,SYC,Seychelles,2020,12,monthly,-13670332.0
+270,SYC,Seychelles,2021,12,monthly,8034202
+271,SGP,Singapore,2020,12,monthly,-13669648.0
+272,SGP,Singapore,2021,12,monthly,-13667410.0
+273,SGP,Singapore,2022,9,monthly,800568
+274,SVK,Slovakia,2020,53,weekly,-13684994.0
+275,SVK,Slovakia,2021,52,weekly,-13672739.0
+276,SVK,Slovakia,2022,37,weekly,805203
+277,SVN,Slovenia,2020,53,weekly,-13741089.0
+278,SVN,Slovenia,2021,52,weekly,-13742406.0
+279,SVN,Slovenia,2022,41,weekly,806549
+280,ZAF,South Africa,2020,53,weekly,-13698462.0
+281,ZAF,South Africa,2021,52,weekly,-13587427.0
+282,ZAF,South Africa,2022,43,weekly,866854
+283,KOR,South Korea,2020,53,weekly,-14271849.0
+284,KOR,South Korea,2021,52,weekly,-14264482.0
+285,KOR,South Korea,2022,30,weekly,860641
+286,ESP,Spain,2020,53,weekly,-14501218.0
+287,ESP,Spain,2021,52,weekly,-14552196.0
+288,ESP,Spain,2022,39,weekly,873837
+289,SUR,Suriname,2020,12,monthly,32621933
+290,SWE,Sweden,2020,53,weekly,-14995146.0
+291,SWE,Sweden,2021,52,weekly,-15003288.9
+292,SWE,Sweden,2022,40,weekly,867887
+293,CHE,Switzerland,2020,53,weekly,-15084486.0
+294,CHE,Switzerland,2021,52,weekly,-15091081.0
+295,CHE,Switzerland,2022,40,weekly,868607
+296,TWN,Taiwan,2020,12,monthly,-15159869.0
+297,TWN,Taiwan,2021,12,monthly,-15149293.0
+298,TWN,Taiwan,2022,10,monthly,873528
+299,TJK,Tajikistan,2020,12,monthly,33296067
+300,THA,Thailand,2020,12,monthly,-15345306.0
+301,THA,Thailand,2021,12,monthly,-15283094.0
+302,THA,Thailand,2022,10,monthly,894009
+303,TRA,Transnistria,2020,12,monthly,-19807037.0
+304,TRA,Transnistria,2021,12,monthly,-19805315.0
+305,TRA,Transnistria,2022,3,monthly,-3067434
+306,TUN,Tunisia,2020,12,monthly,-15842936.0
+307,TUN,Tunisia,2021,12,monthly,9288083
+308,UKR,Ukraine,2020,12,monthly,-15885424.0
+309,UKR,Ukraine,2021,12,monthly,-15787996.0
+310,UKR,Ukraine,2022,1,monthly,764574
+311,GBR,United Kingdom,2020,53,weekly,-16411390.0
+312,GBR,United Kingdom,2021,52,weekly,-16442431.0
+313,GBR,United Kingdom,2022,42,weekly,787310
+314,USA,United States,2020,53,weekly,-16455965.0
+315,USA,United States,2021,52,weekly,-16438887.0
+316,USA,United States,2022,40,weekly,1134372
+317,URY,Uruguay,2020,12,monthly,-19898020.0
+318,URY,Uruguay,2021,12,monthly,-19890059.0
+319,URY,Uruguay,2022,8,monthly,1134191
+320,UZB,Uzbekistan,2020,12,monthly,-1
+321,UZB,Uzbekistan,2021,12,monthly,-1

@@ -1,0 +1,598 @@
+,iso3c,country_name,year,time,time_unit,deaths
+0,ALB,Albania,2016,12,monthly,21388.0
+1,ALB,Albania,2017,12,monthly,22232.0
+2,ALB,Albania,2018,12,monthly,21804.0
+3,ALB,Albania,2019,12,monthly,21937.0
+4,DZA,Algeria,2018,12,monthly,177136.40000000002
+5,DZA,Algeria,2019,12,monthly,181442.9
+6,AND,Andorra,2015,12,monthly,282.0
+7,AND,Andorra,2016,12,monthly,310.0
+8,AND,Andorra,2017,12,monthly,323.0
+9,AND,Andorra,2018,12,monthly,335.0
+10,AND,Andorra,2019,12,monthly,301.0
+11,ATG,Antigua and Barbuda,2015,12,monthly,533.0
+12,ATG,Antigua and Barbuda,2016,12,monthly,548.0
+13,ATG,Antigua and Barbuda,2017,12,monthly,573.0
+14,ATG,Antigua and Barbuda,2018,12,monthly,581.0
+15,ATG,Antigua and Barbuda,2019,12,monthly,618.0
+16,ARG,Argentina,2015,12,monthly,333440.0
+17,ARG,Argentina,2016,12,monthly,352506.0
+18,ARG,Argentina,2017,12,monthly,342341.0
+19,ARG,Argentina,2018,12,monthly,337601.0
+20,ARG,Argentina,2019,12,monthly,341055.0
+21,ARM,Armenia,2015,12,monthly,27844.0
+22,ARM,Armenia,2016,12,monthly,28129.0
+23,ARM,Armenia,2017,12,monthly,27367.0
+24,ARM,Armenia,2018,12,monthly,25645.0
+25,ARM,Armenia,2019,12,monthly,26252.0
+26,ABW,Aruba,2015,12,monthly,679.0
+27,ABW,Aruba,2016,12,monthly,781.0
+28,ABW,Aruba,2017,12,monthly,707.0
+29,ABW,Aruba,2018,12,monthly,717.0
+30,ABW,Aruba,2019,12,monthly,665.0
+31,AUS,Australia,2015,53,weekly,159762.0
+32,AUS,Australia,2016,52,weekly,157848.0
+33,AUS,Australia,2017,52,weekly,163923.0
+34,AUS,Australia,2018,52,weekly,159071.0
+35,AUS,Australia,2019,52,weekly,164372.0
+36,AUT,Austria,2015,53,weekly,82969.0
+37,AUT,Austria,2016,52,weekly,78842.0
+38,AUT,Austria,2017,52,weekly,81311.0
+39,AUT,Austria,2018,52,weekly,82063.0
+40,AUT,Austria,2019,52,weekly,81485.0
+41,AZE,Azerbaijan,2015,12,monthly,54700.0
+42,AZE,Azerbaijan,2016,12,monthly,56648.0
+43,AZE,Azerbaijan,2017,12,monthly,57109.0
+44,AZE,Azerbaijan,2018,12,monthly,57250.0
+45,AZE,Azerbaijan,2019,12,monthly,56447.0
+46,BHS,Bahamas,2015,12,monthly,2256.0
+47,BHS,Bahamas,2016,12,monthly,2290.0
+48,BHS,Bahamas,2017,12,monthly,2432.0
+49,BHS,Bahamas,2018,12,monthly,2557.0
+50,BHS,Bahamas,2019,12,monthly,2639.0
+51,BRB,Barbados,2015,12,monthly,2570.0
+52,BRB,Barbados,2016,12,monthly,2584.0
+53,BRB,Barbados,2017,12,monthly,2632.0
+54,BRB,Barbados,2018,12,monthly,2531.0
+55,BRB,Barbados,2019,12,monthly,2896.0
+56,BLR,Belarus,2015,12,monthly,120025.0
+57,BLR,Belarus,2016,12,monthly,119369.0
+58,BLR,Belarus,2017,12,monthly,119303.0
+59,BLR,Belarus,2018,12,monthly,120047.0
+60,BLR,Belarus,2019,12,monthly,120913.0
+61,BEL,Belgium,2015,53,weekly,112409.0
+62,BEL,Belgium,2016,52,weekly,107532.0
+63,BEL,Belgium,2017,52,weekly,109278.0
+64,BEL,Belgium,2018,52,weekly,110341.0
+65,BEL,Belgium,2019,52,weekly,108436.0
+66,BLZ,Belize,2015,12,monthly,1812.0
+67,BLZ,Belize,2016,12,monthly,1829.0
+68,BLZ,Belize,2017,12,monthly,1930.0
+69,BLZ,Belize,2018,12,monthly,1915.0
+70,BLZ,Belize,2019,12,monthly,1994.0
+71,BMU,Bermuda,2015,12,monthly,478.0
+72,BMU,Bermuda,2016,12,monthly,492.0
+73,BMU,Bermuda,2017,12,monthly,481.0
+74,BMU,Bermuda,2018,12,monthly,533.0
+75,BMU,Bermuda,2019,12,monthly,535.0
+76,BOL,Bolivia,2015,12,monthly,48935.0
+77,BOL,Bolivia,2016,12,monthly,50767.0
+78,BOL,Bolivia,2017,12,monthly,49794.0
+79,BOL,Bolivia,2018,12,monthly,51570.0
+80,BOL,Bolivia,2019,12,monthly,51998.0
+81,BIH,Bosnia,2015,12,monthly,38150.0
+82,BIH,Bosnia,2016,12,monthly,36571.0
+83,BIH,Bosnia,2017,12,monthly,36336.0
+84,BIH,Bosnia,2018,12,monthly,36305.0
+85,BIH,Bosnia,2019,12,monthly,37130.0
+86,BRA,Brazil,2015,12,monthly,1264175.0
+87,BRA,Brazil,2016,12,monthly,1309774.0
+88,BRA,Brazil,2017,12,monthly,1312663.0
+89,BRA,Brazil,2018,12,monthly,1316719.0
+90,BRA,Brazil,2019,12,monthly,1349801.0
+91,BRN,Brunei,2015,12,monthly,1547.0
+92,BRN,Brunei,2016,12,monthly,1632.0
+93,BRN,Brunei,2017,12,monthly,1696.0
+94,BRN,Brunei,2018,12,monthly,1612.0
+95,BRN,Brunei,2019,12,monthly,1757.0
+96,BGR,Bulgaria,2015,53,weekly,112270.0
+97,BGR,Bulgaria,2016,52,weekly,107015.0
+98,BGR,Bulgaria,2017,52,weekly,109184.0
+99,BGR,Bulgaria,2018,52,weekly,108202.0
+100,BGR,Bulgaria,2019,52,weekly,107818.0
+101,CPV,Cabo Verde,2015,12,monthly,2761.0
+102,CPV,Cabo Verde,2016,12,monthly,2591.0
+103,CPV,Cabo Verde,2017,12,monthly,2497.0
+104,CPV,Cabo Verde,2018,12,monthly,2836.0
+105,CPV,Cabo Verde,2019,12,monthly,2771.0
+106,CAN,Canada,2015,53,weekly,269455.0
+107,CAN,Canada,2016,52,weekly,266080.0
+108,CAN,Canada,2017,52,weekly,277395.0
+109,CAN,Canada,2018,52,weekly,284865.0
+110,CAN,Canada,2019,52,weekly,284315.0
+111,CHL,Chile,2016,52,weekly,103375.0
+112,CHL,Chile,2017,52,weekly,106045.0
+113,CHL,Chile,2018,52,weekly,106458.0
+114,CHL,Chile,2019,52,weekly,109348.0
+115,COL,Colombia,2015,53,weekly,222270.0
+116,COL,Colombia,2016,52,weekly,220583.0
+117,COL,Colombia,2017,52,weekly,224210.0
+118,COL,Colombia,2018,52,weekly,234334.0
+119,COL,Colombia,2019,52,weekly,241281.0
+120,CRI,Costa Rica,2015,12,monthly,21038.0
+121,CRI,Costa Rica,2016,12,monthly,22601.0
+122,CRI,Costa Rica,2017,12,monthly,23246.0
+123,CRI,Costa Rica,2018,12,monthly,23762.0
+124,CRI,Costa Rica,2019,12,monthly,24292.0
+125,HRV,Croatia,2015,53,weekly,55140.0
+126,HRV,Croatia,2016,52,weekly,51254.0
+127,HRV,Croatia,2017,52,weekly,53269.0
+128,HRV,Croatia,2018,52,weekly,52562.0
+129,HRV,Croatia,2019,52,weekly,51611.0
+130,CUB,Cuba,2015,12,monthly,99691.0
+131,CUB,Cuba,2016,12,monthly,99388.0
+132,CUB,Cuba,2017,12,monthly,106949.0
+133,CUB,Cuba,2018,12,monthly,106196.0
+134,CUB,Cuba,2019,12,monthly,109089.0
+135,CYP,Cyprus,2015,53,weekly,5983.0
+136,CYP,Cyprus,2016,52,weekly,5448.0
+137,CYP,Cyprus,2017,52,weekly,6009.0
+138,CYP,Cyprus,2018,52,weekly,5798.0
+139,CYP,Cyprus,2019,52,weekly,6218.0
+140,CZE,Czechia,2015,53,weekly,113174.0
+141,CZE,Czechia,2016,52,weekly,107237.0
+142,CZE,Czechia,2017,52,weekly,111007.0
+143,CZE,Czechia,2018,52,weekly,112604.0
+144,CZE,Czechia,2019,52,weekly,112040.0
+145,DNK,Denmark,2015,53,weekly,53435.0
+146,DNK,Denmark,2016,52,weekly,52581.0
+147,DNK,Denmark,2017,52,weekly,53103.0
+148,DNK,Denmark,2018,52,weekly,55076.0
+149,DNK,Denmark,2019,52,weekly,53805.0
+150,DOM,Dominican Republic,2015,12,monthly,41788.0
+151,DOM,Dominican Republic,2016,12,monthly,44114.0
+152,DOM,Dominican Republic,2017,12,monthly,43210.0
+153,DOM,Dominican Republic,2018,12,monthly,42467.0
+154,DOM,Dominican Republic,2019,12,monthly,44451.0
+155,ECU,Ecuador,2015,53,weekly,66774.0
+156,ECU,Ecuador,2016,52,weekly,68138.0
+157,ECU,Ecuador,2017,52,weekly,70049.0
+158,ECU,Ecuador,2018,52,weekly,71769.0
+159,ECU,Ecuador,2019,52,weekly,73479.0
+160,EGY,Egypt,2015,12,monthly,573879.0
+161,EGY,Egypt,2016,12,monthly,556148.0
+162,EGY,Egypt,2017,12,monthly,547208.0
+163,EGY,Egypt,2018,12,monthly,559760.0
+164,EGY,Egypt,2019,12,monthly,570580.0
+165,SLV,El Salvador,2015,12,monthly,43067.0
+166,SLV,El Salvador,2016,12,monthly,41459.0
+167,SLV,El Salvador,2017,12,monthly,41710.0
+168,SLV,El Salvador,2018,12,monthly,41564.0
+169,SLV,El Salvador,2019,12,monthly,43311.0
+170,EST,Estonia,2015,53,weekly,15481.0
+171,EST,Estonia,2016,52,weekly,15314.0
+172,EST,Estonia,2017,52,weekly,15476.0
+173,EST,Estonia,2018,52,weekly,15684.0
+174,EST,Estonia,2019,52,weekly,15332.0
+175,FRO,Faroe Islands,2015,12,monthly,379.0
+176,FRO,Faroe Islands,2016,12,monthly,379.0
+177,FRO,Faroe Islands,2017,12,monthly,448.0
+178,FRO,Faroe Islands,2018,12,monthly,394.0
+179,FRO,Faroe Islands,2019,12,monthly,411.0
+180,FIN,Finland,2015,53,weekly,53467.0
+181,FIN,Finland,2016,52,weekly,53604.0
+182,FIN,Finland,2017,52,weekly,53516.0
+183,FIN,Finland,2018,52,weekly,54369.0
+184,FIN,Finland,2019,52,weekly,53820.0
+185,FRA,France,2015,53,weekly,592498.0
+186,FRA,France,2016,52,weekly,578416.0
+187,FRA,France,2017,52,weekly,591715.0
+188,FRA,France,2018,52,weekly,595029.0
+189,FRA,France,2019,52,weekly,597917.0
+190,GUF,French Guiana,2015,53,weekly,812.0
+191,GUF,French Guiana,2016,52,weekly,872.0
+192,GUF,French Guiana,2017,52,weekly,910.0
+193,GUF,French Guiana,2018,52,weekly,867.0
+194,GUF,French Guiana,2019,52,weekly,1008.0
+195,PYF,French Polynesia,2015,12,monthly,1409.0
+196,PYF,French Polynesia,2016,12,monthly,1394.0
+197,PYF,French Polynesia,2017,12,monthly,1608.0
+198,PYF,French Polynesia,2018,12,monthly,1616.0
+199,PYF,French Polynesia,2019,12,monthly,1563.0
+200,GEO,Georgia,2015,12,monthly,49121.0
+201,GEO,Georgia,2016,12,monthly,50771.0
+202,GEO,Georgia,2017,12,monthly,47822.0
+203,GEO,Georgia,2018,12,monthly,46524.0
+204,GEO,Georgia,2019,12,monthly,46659.0
+205,DEU,Germany,2015,53,weekly,940708.0
+206,DEU,Germany,2016,52,weekly,906309.0
+207,DEU,Germany,2017,52,weekly,929351.0
+208,DEU,Germany,2018,52,weekly,952295.0
+209,DEU,Germany,2019,52,weekly,936772.0
+210,GIB,Gibraltar,2015,12,monthly,241.0
+211,GIB,Gibraltar,2016,12,monthly,271.0
+212,GIB,Gibraltar,2017,12,monthly,286.0
+213,GIB,Gibraltar,2018,12,monthly,314.0
+214,GIB,Gibraltar,2019,12,monthly,268.0
+215,GRC,Greece,2015,53,weekly,123324.0
+216,GRC,Greece,2016,52,weekly,118116.0
+217,GRC,Greece,2017,52,weekly,124069.0
+218,GRC,Greece,2018,52,weekly,119952.0
+219,GRC,Greece,2019,52,weekly,124538.0
+220,GRL,Greenland,2015,12,monthly,472.0
+221,GRL,Greenland,2016,12,monthly,487.0
+222,GRL,Greenland,2017,12,monthly,499.0
+223,GRL,Greenland,2018,12,monthly,487.0
+224,GRL,Greenland,2019,12,monthly,548.0
+225,GLP,Guadeloupe,2015,53,weekly,2937.0
+226,GLP,Guadeloupe,2016,52,weekly,3192.0
+227,GLP,Guadeloupe,2017,52,weekly,3102.0
+228,GLP,Guadeloupe,2018,52,weekly,3177.0
+229,GLP,Guadeloupe,2019,52,weekly,3410.0
+230,GTM,Guatemala,2015,53,weekly,82265.0
+231,GTM,Guatemala,2016,52,weekly,82140.0
+232,GTM,Guatemala,2017,52,weekly,81434.0
+233,GTM,Guatemala,2018,52,weekly,81475.0
+234,GTM,Guatemala,2019,52,weekly,85088.0
+235,HKG,Hong Kong,2015,12,monthly,46108.0
+236,HKG,Hong Kong,2016,12,monthly,46905.0
+237,HKG,Hong Kong,2017,12,monthly,46829.0
+238,HKG,Hong Kong,2018,12,monthly,47400.0
+239,HKG,Hong Kong,2019,12,monthly,48957.0
+240,HUN,Hungary,2015,53,weekly,133978.0
+241,HUN,Hungary,2016,52,weekly,126293.0
+242,HUN,Hungary,2017,52,weekly,131293.0
+243,HUN,Hungary,2018,52,weekly,130624.0
+244,HUN,Hungary,2019,52,weekly,129266.0
+245,ISL,Iceland,2015,53,weekly,2223.0
+246,ISL,Iceland,2016,52,weekly,2295.0
+247,ISL,Iceland,2017,52,weekly,2229.0
+248,ISL,Iceland,2018,52,weekly,2247.0
+249,ISL,Iceland,2019,52,weekly,2261.0
+250,IRN,Iran,2015,53,weekly,364827.0
+251,IRN,Iran,2016,52,weekly,360303.50000000006
+252,IRN,Iran,2017,52,weekly,361442.9000000001
+253,IRN,Iran,2018,52,weekly,371471.4999999998
+254,IRN,Iran,2019,52,weekly,384922.89999999997
+255,IRL,Ireland,2015,12,monthly,30127.0
+256,IRL,Ireland,2016,12,monthly,30667.0
+257,IRL,Ireland,2017,12,monthly,30418.0
+258,IRL,Ireland,2018,12,monthly,31140.0
+259,IRL,Ireland,2019,12,monthly,31270.0
+260,ISR,Israel,2015,53,weekly,45066.0
+261,ISR,Israel,2016,52,weekly,43689.0
+262,ISR,Israel,2017,52,weekly,44425.0
+263,ISR,Israel,2018,52,weekly,44397.0
+264,ISR,Israel,2019,52,weekly,45813.0
+265,ITA,Italy,2015,53,weekly,667986.0
+266,ITA,Italy,2016,52,weekly,623748.0
+267,ITA,Italy,2017,52,weekly,656891.0
+268,ITA,Italy,2018,52,weekly,638884.0
+269,ITA,Italy,2019,52,weekly,642964.0
+270,JAM,Jamaica,2015,12,monthly,17903.0
+271,JAM,Jamaica,2016,12,monthly,18329.0
+272,JAM,Jamaica,2017,12,monthly,17928.0
+273,JAM,Jamaica,2018,12,monthly,18144.0
+274,JAM,Jamaica,2019,12,monthly,19219.0
+275,JPN,Japan,2015,12,monthly,1290510.0
+276,JPN,Japan,2016,12,monthly,1308158.0
+277,JPN,Japan,2017,12,monthly,1340567.0
+278,JPN,Japan,2018,12,monthly,1362470.0
+279,JPN,Japan,2019,12,monthly,1387775.0
+280,JOR,Jordan,2015,12,monthly,27250.0
+281,JOR,Jordan,2017,12,monthly,26763.0
+282,JOR,Jordan,2018,12,monthly,27035.0
+283,JOR,Jordan,2019,12,monthly,29052.0
+284,KAZ,Kazakhstan,2015,12,monthly,130852.0
+285,KAZ,Kazakhstan,2016,12,monthly,132416.0
+286,KAZ,Kazakhstan,2017,12,monthly,130036.0
+287,KAZ,Kazakhstan,2018,12,monthly,130515.0
+288,KAZ,Kazakhstan,2019,12,monthly,133489.0
+289,KOS,Kosovo,2015,12,monthly,8202.0
+290,KOS,Kosovo,2016,12,monthly,8495.0
+291,KOS,Kosovo,2017,12,monthly,8721.0
+292,KOS,Kosovo,2018,12,monthly,8998.0
+293,KOS,Kosovo,2019,12,monthly,9430.0
+294,KWT,Kuwait,2015,12,monthly,6481.0
+295,KWT,Kuwait,2016,12,monthly,6338.0
+296,KWT,Kuwait,2017,12,monthly,6679.0
+297,KWT,Kuwait,2018,12,monthly,6807.0
+298,KWT,Kuwait,2019,12,monthly,7306.0
+299,KGZ,Kyrgyzstan,2015,12,monthly,34805.0
+300,KGZ,Kyrgyzstan,2016,12,monthly,33475.0
+301,KGZ,Kyrgyzstan,2017,12,monthly,33166.0
+302,KGZ,Kyrgyzstan,2018,12,monthly,32989.0
+303,KGZ,Kyrgyzstan,2019,12,monthly,33295.0
+304,LVA,Latvia,2015,53,weekly,28972.0
+305,LVA,Latvia,2016,52,weekly,28443.0
+306,LVA,Latvia,2017,52,weekly,28659.0
+307,LVA,Latvia,2018,52,weekly,28743.0
+308,LVA,Latvia,2019,52,weekly,27632.0
+309,LBN,Lebanon,2015,12,monthly,25275.0
+310,LBN,Lebanon,2016,12,monthly,24617.0
+311,LBN,Lebanon,2017,12,monthly,25847.0
+312,LBN,Lebanon,2018,12,monthly,25096.0
+313,LBN,Lebanon,2019,12,monthly,24949.0
+314,LIE,Liechtenstein,2015,12,monthly,252.0
+315,LIE,Liechtenstein,2016,12,monthly,271.0
+316,LIE,Liechtenstein,2017,12,monthly,249.0
+317,LIE,Liechtenstein,2018,12,monthly,274.0
+318,LIE,Liechtenstein,2019,12,monthly,263.0
+319,LTU,Lithuania,2015,53,weekly,42532.0
+320,LTU,Lithuania,2016,52,weekly,40859.0
+321,LTU,Lithuania,2017,52,weekly,39990.0
+322,LTU,Lithuania,2018,52,weekly,39452.0
+323,LTU,Lithuania,2019,52,weekly,38184.0
+324,LUX,Luxembourg,2015,53,weekly,4048.0
+325,LUX,Luxembourg,2016,52,weekly,3942.0
+326,LUX,Luxembourg,2017,52,weekly,4251.0
+327,LUX,Luxembourg,2018,52,weekly,4300.0
+328,LUX,Luxembourg,2019,52,weekly,4288.0
+329,MAC,Macao,2015,12,monthly,2320.0
+330,MAC,Macao,2016,12,monthly,2248.0
+331,MAC,Macao,2017,12,monthly,2120.0
+332,MAC,Macao,2018,12,monthly,2069.0
+333,MAC,Macao,2019,12,monthly,2282.0
+334,MYS,Malaysia,2015,12,monthly,155786.0
+335,MYS,Malaysia,2016,12,monthly,162201.0
+336,MYS,Malaysia,2017,12,monthly,168168.0
+337,MYS,Malaysia,2018,12,monthly,172031.0
+338,MYS,Malaysia,2019,12,monthly,173746.0
+339,MDV,Maldives,2015,12,monthly,1130.0
+340,MDV,Maldives,2016,12,monthly,1226.0
+341,MDV,Maldives,2017,12,monthly,1241.0
+342,MDV,Maldives,2018,12,monthly,1216.0
+343,MDV,Maldives,2019,12,monthly,1041.0
+344,MLT,Malta,2015,53,weekly,3520.0
+345,MLT,Malta,2016,52,weekly,3308.0
+346,MLT,Malta,2017,52,weekly,3556.0
+347,MLT,Malta,2018,52,weekly,3672.0
+348,MLT,Malta,2019,52,weekly,3684.0
+349,MTQ,Martinique,2015,53,weekly,3102.0
+350,MTQ,Martinique,2016,52,weekly,3284.0
+351,MTQ,Martinique,2017,52,weekly,3222.0
+352,MTQ,Martinique,2018,52,weekly,3273.0
+353,MTQ,Martinique,2019,52,weekly,3540.0
+354,MUS,Mauritius,2015,12,monthly,9747.0
+355,MUS,Mauritius,2016,12,monthly,10174.0
+356,MUS,Mauritius,2017,12,monthly,10140.0
+357,MUS,Mauritius,2018,12,monthly,10787.0
+358,MUS,Mauritius,2019,12,monthly,11174.0
+359,MYT,Mayotte,2015,53,weekly,628.0
+360,MYT,Mayotte,2016,52,weekly,677.0
+361,MYT,Mayotte,2017,52,weekly,709.0
+362,MYT,Mayotte,2018,52,weekly,715.0
+363,MYT,Mayotte,2019,52,weekly,748.0
+364,MEX,Mexico,2015,53,weekly,665840.0
+365,MEX,Mexico,2016,52,weekly,680506.0
+366,MEX,Mexico,2017,52,weekly,701160.0
+367,MEX,Mexico,2018,52,weekly,718206.0
+368,MEX,Mexico,2019,52,weekly,731233.0
+369,MDA,Moldova,2015,12,monthly,39883.0
+370,MDA,Moldova,2016,12,monthly,38489.0
+371,MDA,Moldova,2017,12,monthly,36768.0
+372,MDA,Moldova,2018,12,monthly,37176.0
+373,MDA,Moldova,2019,12,monthly,36794.0
+374,MCO,Monaco,2015,12,monthly,592.0
+375,MCO,Monaco,2016,12,monthly,503.0
+376,MCO,Monaco,2017,12,monthly,494.0
+377,MCO,Monaco,2018,12,monthly,522.0
+378,MCO,Monaco,2019,12,monthly,528.0
+379,MNG,Mongolia,2015,12,monthly,16374.0
+380,MNG,Mongolia,2016,12,monthly,16181.0
+381,MNG,Mongolia,2017,12,monthly,15812.0
+382,MNG,Mongolia,2018,12,monthly,17331.0
+383,MNG,Mongolia,2019,12,monthly,17205.0
+384,MNE,Montenegro,2015,53,weekly,6452.0
+385,MNE,Montenegro,2016,52,weekly,6424.0
+386,MNE,Montenegro,2017,52,weekly,6499.0
+387,MNE,Montenegro,2018,52,weekly,6479.0
+388,MNE,Montenegro,2019,52,weekly,6579.0
+389,NLD,Netherlands,2015,53,weekly,149853.0
+390,NLD,Netherlands,2016,52,weekly,148315.0
+391,NLD,Netherlands,2017,52,weekly,149805.0
+392,NLD,Netherlands,2018,52,weekly,152991.0
+393,NLD,Netherlands,2019,52,weekly,151543.0
+394,NCL,New Caledonia,2015,12,monthly,1465.0
+395,NCL,New Caledonia,2016,12,monthly,1569.0
+396,NCL,New Caledonia,2017,12,monthly,1531.0
+397,NCL,New Caledonia,2018,12,monthly,1556.0
+398,NCL,New Caledonia,2019,12,monthly,1627.0
+399,NZL,New Zealand,2015,53,weekly,32200.0
+400,NZL,New Zealand,2016,52,weekly,31176.0
+401,NZL,New Zealand,2017,52,weekly,33495.0
+402,NZL,New Zealand,2018,52,weekly,33053.0
+403,NZL,New Zealand,2019,52,weekly,34088.0
+404,NIC,Nicaragua,2015,12,monthly,23540.0
+405,NIC,Nicaragua,2016,12,monthly,23738.0
+406,NIC,Nicaragua,2017,12,monthly,24300.0
+407,NIC,Nicaragua,2018,12,monthly,24296.0
+408,NIC,Nicaragua,2019,12,monthly,25340.0
+409,MKD,North Macedonia,2015,12,monthly,20461.0
+410,MKD,North Macedonia,2016,12,monthly,20421.0
+411,MKD,North Macedonia,2017,12,monthly,20318.0
+412,MKD,North Macedonia,2018,12,monthly,19727.0
+413,MKD,North Macedonia,2019,12,monthly,20412.0
+414,NOR,Norway,2015,53,weekly,41528.0
+415,NOR,Norway,2016,52,weekly,40436.0
+416,NOR,Norway,2017,52,weekly,40631.0
+417,NOR,Norway,2018,52,weekly,40704.0
+418,NOR,Norway,2019,52,weekly,40458.0
+419,OMN,Oman,2015,12,monthly,7343.0
+420,OMN,Oman,2016,12,monthly,8829.0
+421,OMN,Oman,2017,12,monthly,8861.0
+422,OMN,Oman,2018,12,monthly,8979.0
+423,OMN,Oman,2019,12,monthly,8581.0
+424,PSE,Palestine,2018,12,monthly,12296.0
+425,PSE,Palestine,2019,12,monthly,12602.0
+426,PAN,Panama,2015,12,monthly,18182.0
+427,PAN,Panama,2016,12,monthly,18882.0
+428,PAN,Panama,2017,12,monthly,19482.0
+429,PAN,Panama,2018,12,monthly,19720.0
+430,PAN,Panama,2019,12,monthly,20332.0
+431,PRY,Paraguay,2015,12,monthly,29802.0
+432,PRY,Paraguay,2016,12,monthly,32360.0
+433,PRY,Paraguay,2017,12,monthly,30111.0
+434,PRY,Paraguay,2018,12,monthly,32312.0
+435,PRY,Paraguay,2019,12,monthly,33824.0
+436,PER,Peru,2017,52,weekly,149619.5
+437,PER,Peru,2018,52,weekly,151288.1
+438,PER,Peru,2019,52,weekly,157144.1
+439,PHL,Philippines,2015,12,monthly,560605.0
+440,PHL,Philippines,2016,12,monthly,582183.0
+441,PHL,Philippines,2017,12,monthly,579237.0
+442,PHL,Philippines,2018,12,monthly,590709.0
+443,PHL,Philippines,2019,12,monthly,620414.0
+444,POL,Poland,2015,53,weekly,401852.0
+445,POL,Poland,2016,52,weekly,386953.0
+446,POL,Poland,2017,52,weekly,402533.0
+447,POL,Poland,2018,52,weekly,411312.0
+448,POL,Poland,2019,52,weekly,407624.0
+449,PRT,Portugal,2015,53,weekly,110665.0
+450,PRT,Portugal,2016,52,weekly,110028.0
+451,PRT,Portugal,2017,52,weekly,109283.0
+452,PRT,Portugal,2018,52,weekly,112692.0
+453,PRT,Portugal,2019,52,weekly,111474.0
+454,PRI,Puerto Rico,2015,52,weekly,28019.0
+455,PRI,Puerto Rico,2016,52,weekly,29329.0
+456,PRI,Puerto Rico,2017,52,weekly,30773.0
+457,PRI,Puerto Rico,2018,52,weekly,28885.0
+458,PRI,Puerto Rico,2019,52,weekly,29314.0
+459,QAT,Qatar,2015,12,monthly,2317.0
+460,QAT,Qatar,2016,12,monthly,2347.0
+461,QAT,Qatar,2017,12,monthly,2294.0
+462,QAT,Qatar,2018,12,monthly,2385.0
+463,QAT,Qatar,2019,12,monthly,2200.0
+464,REU,Réunion,2015,53,weekly,4627.0
+465,REU,Réunion,2016,52,weekly,4701.0
+466,REU,Réunion,2017,52,weekly,4690.0
+467,REU,Réunion,2018,52,weekly,5028.0
+468,REU,Réunion,2019,52,weekly,5090.0
+469,ROU,Romania,2015,53,weekly,267209.0
+470,ROU,Romania,2016,52,weekly,257033.0
+471,ROU,Romania,2017,52,weekly,261217.0
+472,ROU,Romania,2018,52,weekly,263222.0
+473,ROU,Romania,2019,52,weekly,258711.0
+474,RUS,Russia,2015,12,monthly,1908541.0
+475,RUS,Russia,2016,12,monthly,1891015.0
+476,RUS,Russia,2017,12,monthly,1826124.9999999998
+477,RUS,Russia,2018,12,monthly,1828910.1000000003
+478,RUS,Russia,2019,12,monthly,1798307.0999999996
+479,KNA,Saint Kitts and Nevis,2016,12,monthly,402.0
+480,KNA,Saint Kitts and Nevis,2017,12,monthly,376.0
+481,KNA,Saint Kitts and Nevis,2018,12,monthly,404.0
+482,KNA,Saint Kitts and Nevis,2019,12,monthly,366.0
+483,VCT,Saint Vincent and the Grenadines,2015,12,monthly,885.0
+484,VCT,Saint Vincent and the Grenadines,2016,12,monthly,934.0
+485,VCT,Saint Vincent and the Grenadines,2017,12,monthly,917.0
+486,VCT,Saint Vincent and the Grenadines,2018,12,monthly,965.0
+487,VCT,Saint Vincent and the Grenadines,2019,12,monthly,1023.0
+488,SMR,San Marino,2015,12,monthly,235.0
+489,SMR,San Marino,2016,12,monthly,253.0
+490,SMR,San Marino,2017,12,monthly,278.0
+491,SMR,San Marino,2018,12,monthly,244.0
+492,SMR,San Marino,2019,12,monthly,251.0
+493,SRB,Serbia,2015,12,monthly,103678.0
+494,SRB,Serbia,2016,12,monthly,100834.0
+495,SRB,Serbia,2017,12,monthly,103722.0
+496,SRB,Serbia,2018,12,monthly,101655.0
+497,SRB,Serbia,2019,12,monthly,101458.0
+498,SYC,Seychelles,2015,12,monthly,703.0
+499,SYC,Seychelles,2016,12,monthly,747.0
+500,SYC,Seychelles,2017,12,monthly,748.0
+501,SYC,Seychelles,2018,12,monthly,818.0
+502,SYC,Seychelles,2019,12,monthly,795.0
+503,SGP,Singapore,2015,12,monthly,19862.0
+504,SGP,Singapore,2016,12,monthly,20017.0
+505,SGP,Singapore,2017,12,monthly,20905.0
+506,SGP,Singapore,2018,12,monthly,21282.0
+507,SGP,Singapore,2019,12,monthly,21446.0
+508,SVK,Slovakia,2015,53,weekly,54747.0
+509,SVK,Slovakia,2016,52,weekly,52085.0
+510,SVK,Slovakia,2017,52,weekly,53702.0
+511,SVK,Slovakia,2018,52,weekly,54137.0
+512,SVK,Slovakia,2019,52,weekly,53115.0
+513,SVN,Slovenia,2015,53,weekly,20184.0
+514,SVN,Slovenia,2016,52,weekly,19577.0
+515,SVN,Slovenia,2017,52,weekly,20436.0
+516,SVN,Slovenia,2018,52,weekly,20428.0
+517,SVN,Slovenia,2019,52,weekly,20547.0
+518,ZAF,South Africa,2015,52,weekly,535539.0
+519,ZAF,South Africa,2016,52,weekly,529300.0
+520,ZAF,South Africa,2017,52,weekly,525458.0
+521,ZAF,South Africa,2018,52,weekly,526989.0
+522,ZAF,South Africa,2019,52,weekly,525457.0
+523,KOR,South Korea,2015,53,weekly,280766.0
+524,KOR,South Korea,2016,52,weekly,279257.0
+525,KOR,South Korea,2017,52,weekly,284548.0
+526,KOR,South Korea,2018,52,weekly,298030.0
+527,KOR,South Korea,2019,52,weekly,294080.0
+528,ESP,Spain,2015,53,weekly,427851.0
+529,ESP,Spain,2016,52,weekly,406128.0
+530,ESP,Spain,2017,52,weekly,420589.0
+531,ESP,Spain,2018,52,weekly,423994.0
+532,ESP,Spain,2019,52,weekly,414914.0
+533,SUR,Suriname,2015,12,monthly,3663.0
+534,SUR,Suriname,2016,12,monthly,3591.0
+535,SUR,Suriname,2017,12,monthly,3508.0
+536,SUR,Suriname,2018,12,monthly,3763.0
+537,SUR,Suriname,2019,12,monthly,3955.0
+538,SWE,Sweden,2015,53,weekly,92555.19999999995
+539,SWE,Sweden,2016,52,weekly,90502.09999999999
+540,SWE,Sweden,2017,52,weekly,91626.50000000003
+541,SWE,Sweden,2018,52,weekly,91920.09999999998
+542,SWE,Sweden,2019,52,weekly,88544.70000000004
+543,CHE,Switzerland,2015,53,weekly,68786.0
+544,CHE,Switzerland,2016,52,weekly,64649.0
+545,CHE,Switzerland,2017,52,weekly,66703.0
+546,CHE,Switzerland,2018,52,weekly,66888.0
+547,CHE,Switzerland,2019,52,weekly,67515.0
+548,TWN,Taiwan,2015,12,monthly,163858.0
+549,TWN,Taiwan,2016,12,monthly,172405.0
+550,TWN,Taiwan,2017,12,monthly,171242.0
+551,TWN,Taiwan,2018,12,monthly,172784.0
+552,TWN,Taiwan,2019,12,monthly,176296.0
+553,TJK,Tajikistan,2015,12,monthly,33562.0
+554,TJK,Tajikistan,2016,12,monthly,34134.0
+555,TJK,Tajikistan,2017,12,monthly,32027.0
+556,TJK,Tajikistan,2018,12,monthly,32699.0
+557,TJK,Tajikistan,2019,12,monthly,33537.0
+558,THA,Thailand,2015,12,monthly,473541.0
+559,THA,Thailand,2016,12,monthly,480434.0
+560,THA,Thailand,2017,12,monthly,468911.0
+561,THA,Thailand,2018,12,monthly,473541.0
+562,THA,Thailand,2019,12,monthly,506211.0
+563,TRA,Transnistria,2016,12,monthly,3240.0
+564,TRA,Transnistria,2017,12,monthly,6684.0
+565,TRA,Transnistria,2018,12,monthly,6727.0
+566,TRA,Transnistria,2019,12,monthly,6810.0
+567,TUN,Tunisia,2015,12,monthly,64987.0
+568,TUN,Tunisia,2016,12,monthly,61928.0
+569,TUN,Tunisia,2017,12,monthly,67447.0
+570,TUN,Tunisia,2018,12,monthly,67364.0
+571,TUN,Tunisia,2019,12,monthly,71060.0
+572,UKR,Ukraine,2015,12,monthly,594795.0
+573,UKR,Ukraine,2016,12,monthly,583631.0
+574,UKR,Ukraine,2017,12,monthly,574123.0
+575,UKR,Ukraine,2018,12,monthly,587665.0
+576,UKR,Ukraine,2019,12,monthly,581114.0
+577,GBR,United Kingdom,2015,53,weekly,612061.0
+578,GBR,United Kingdom,2016,52,weekly,596401.0
+579,GBR,United Kingdom,2017,52,weekly,606870.0
+580,GBR,United Kingdom,2018,52,weekly,613309.0
+581,GBR,United Kingdom,2019,52,weekly,600532.0
+582,USA,United States,2015,52,weekly,2706977.0
+583,USA,United States,2016,52,weekly,2733802.0
+584,USA,United States,2017,52,weekly,2810988.0
+585,USA,United States,2018,52,weekly,2839074.0
+586,USA,United States,2019,52,weekly,2852633.0
+587,URY,Uruguay,2015,12,monthly,32967.0
+588,URY,Uruguay,2016,12,monthly,34273.0
+589,URY,Uruguay,2017,12,monthly,33173.0
+590,URY,Uruguay,2018,12,monthly,34128.0
+591,URY,Uruguay,2019,12,monthly,34807.0
+592,UZB,Uzbekistan,2015,12,monthly,152035.0
+593,UZB,Uzbekistan,2016,12,monthly,154791.0
+594,UZB,Uzbekistan,2017,12,monthly,160723.0
+595,UZB,Uzbekistan,2018,12,monthly,154913.0
+596,UZB,Uzbekistan,2019,12,monthly,154570.0

@@ -1,0 +1,122 @@
+,iso3c,country_name,year,time,time_unit,deaths
+0,ALB,Albania,2019,12,monthly,21840
+1,DZA,Algeria,2019,12,monthly,222970
+2,AND,Andorra,2019,12,monthly,89498
+3,ATG,Antigua and Barbuda,2019,12,monthly,90069
+4,ARG,Argentina,2019,12,monthly,431457
+5,ARM,Armenia,2019,12,monthly,458505
+6,ABW,Aruba,2019,12,monthly,459215
+7,AUS,Australia,2019,52,weekly,620210
+8,AUT,Austria,2019,52,weekly,701544
+9,AZE,Azerbaijan,2019,12,monthly,757975
+10,BHS,Bahamas,2019,12,monthly,760409
+11,BRB,Barbados,2019,12,monthly,763052
+12,BLR,Belarus,2019,12,monthly,882983
+13,BEL,Belgium,2019,52,weekly,992583
+14,BLZ,Belize,2019,12,monthly,994479
+15,BMU,Bermuda,2019,12,monthly,994982
+16,BOL,Bolivia,2019,12,monthly,1045595
+17,BIH,Bosnia,2019,12,monthly,1082494
+18,BRA,Brazil,2019,12,monthly,2393120
+19,BRN,Brunei,2019,12,monthly,2394769
+20,BGR,Bulgaria,2019,52,weekly,2503667
+21,CPV,Cabo Verde,2019,12,monthly,2506358
+22,CAN,Canada,2019,52,weekly,2782780
+23,CHL,Chile,2019,52,weekly,3584781
+24,COL,Colombia,2019,52,weekly,3096361
+25,CRI,Costa Rica,2019,12,monthly,3119348
+26,HRV,Croatia,2019,52,weekly,3172116
+27,CUB,Cuba,2019,12,monthly,3276378
+28,CYP,Cyprus,2019,52,weekly,3282269
+29,CZE,Czechia,2019,52,weekly,3393482
+30,DNK,Denmark,2019,52,weekly,3447082
+31,DOM,Dominican Republic,2019,12,monthly,3490288
+32,ECU,Ecuador,2019,52,weekly,3560330
+33,EGY,Egypt,2019,12,monthly,4121845
+34,SLV,El Salvador,2019,12,monthly,4164067
+35,EST,Estonia,2019,52,weekly,4179524
+36,FRO,Faroe Islands,2019,12,monthly,4179926
+37,FIN,Finland,2019,52,weekly,4233682
+38,FRA,France,2019,52,weekly,4824797
+39,GUF,French Guiana,2019,52,weekly,4825690
+40,PYF,French Polynesia,2019,12,monthly,4827208
+41,GEO,Georgia,2019,12,monthly,4875388
+42,DEU,Germany,2019,52,weekly,5808475
+43,GIB,Gibraltar,2019,12,monthly,5808751
+44,GRC,Greece,2019,52,weekly,5930751
+45,GRL,Greenland,2019,12,monthly,5931249
+46,GLP,Guadeloupe,2019,52,weekly,5934413
+47,GTM,Guatemala,2019,52,weekly,6016893
+48,HKG,Hong Kong,2019,12,monthly,6064133
+49,HUN,Hungary,2019,52,weekly,6194424
+50,ISL,Iceland,2019,52,weekly,6196675
+51,IRN,Iran,2019,52,weekly,6565268
+52,IRL,Ireland,2019,12,monthly,6595993
+53,ISR,Israel,2019,52,weekly,6640671
+54,ITA,Italy,2019,52,weekly,7286765
+55,JAM,Jamaica,2019,12,monthly,7305070
+56,JPN,Japan,2019,12,monthly,8642966
+57,JOR,Jordan,2019,12,monthly,10831233
+58,KAZ,Kazakhstan,2019,12,monthly,8796448
+59,KOS,Kosovo,2019,12,monthly,8805217
+60,KWT,Kuwait,2019,12,monthly,8811939
+61,KGZ,Kyrgyzstan,2019,12,monthly,8845485
+62,LVA,Latvia,2019,52,weekly,8873975
+63,LBN,Lebanon,2019,12,monthly,8899132
+64,LIE,Liechtenstein,2019,12,monthly,8899393
+65,LTU,Lithuania,2019,52,weekly,8939597
+66,LUX,Luxembourg,2019,52,weekly,8943763
+67,MAC,Macao,2019,12,monthly,8945970
+68,MYS,Malaysia,2019,12,monthly,9112357
+69,MDV,Maldives,2019,12,monthly,9113528
+70,MLT,Malta,2019,52,weekly,9117076
+71,MTQ,Martinique,2019,52,weekly,9120360
+72,MUS,Mauritius,2019,12,monthly,9130764
+73,MYT,Mayotte,2019,52,weekly,9131460
+74,MEX,Mexico,2019,52,weekly,9830849
+75,MDA,Moldova,2019,12,monthly,9868671
+76,MCO,Monaco,2019,12,monthly,9869198
+77,MNG,Mongolia,2019,12,monthly,9885779
+78,MNE,Montenegro,2019,52,weekly,9892266
+79,NLD,Netherlands,2019,52,weekly,10042767
+80,NCL,New Caledonia,2019,12,monthly,10044317
+81,NZL,New Zealand,2019,52,weekly,10077119
+82,NIC,Nicaragua,2019,12,monthly,10101362
+83,MKD,North Macedonia,2019,12,monthly,10121630
+84,NOR,Norway,2019,52,weekly,10162381
+85,OMN,Oman,2019,12,monthly,10170900
+86,PSE,Palestine,2019,12,monthly,25439698
+87,PAN,Panama,2019,12,monthly,10195199
+88,PRY,Paraguay,2019,12,monthly,10226881
+89,PER,Peru,2019,52,weekly,17197485
+90,PHL,Philippines,2019,12,monthly,10905121
+91,POL,Poland,2019,52,weekly,11307175
+92,PRT,Portugal,2019,52,weekly,11418004
+93,PRI,Puerto Rico,2019,52,weekly,11447268
+94,QAT,Qatar,2019,12,monthly,11449576
+95,REU,Réunion,2019,52,weekly,11454404
+96,ROU,Romania,2019,52,weekly,11715882
+97,RUS,Russia,2019,12,monthly,13566462
+98,KNA,Saint Kitts and Nevis,2019,12,monthly,16958464
+99,VCT,Saint Vincent and the Grenadines,2019,12,monthly,13567716
+100,SMR,San Marino,2019,12,monthly,13567968
+101,SRB,Serbia,2019,12,monthly,13670238
+102,SYC,Seychelles,2019,12,monthly,13671000
+103,SGP,Singapore,2019,12,monthly,13691702
+104,SVK,Slovakia,2019,52,weekly,13745259
+105,SVN,Slovenia,2019,52,weekly,13765494
+106,ZAF,South Africa,2019,52,weekly,14294042
+107,KOR,South Korea,2019,52,weekly,14581379
+108,ESP,Spain,2019,52,weekly,15000074
+109,SUR,Suriname,2019,12,monthly,15003770
+110,SWE,Sweden,2019,52,weekly,15094800
+111,CHE,Switzerland,2019,52,weekly,15161708
+112,TWN,Taiwan,2019,12,monthly,15333025
+113,TJK,Tajikistan,2019,12,monthly,15366217
+114,THA,Thailand,2019,12,monthly,15846744
+115,TRA,Transnistria,2019,12,monthly,19814295
+116,TUN,Tunisia,2019,12,monthly,15917994
+117,UKR,Ukraine,2019,12,monthly,16502259
+118,GBR,United Kingdom,2019,52,weekly,17108094
+119,USA,United States,2019,52,weekly,19896789
+120,URY,Uruguay,2019,12,monthly,19930658
