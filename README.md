@@ -48,6 +48,7 @@ ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
 | 21  | [ML_w7_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w7_hw.ipynb)                                                               | Machine learning with mostly text data.                                                                                                 |
 | 22  | [BD_midterm.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_midterm.ipynb)                                                           | BD midterm answer.                                                                                                                      |
 | 23  | [ML_midterm.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_midterm.ipynb)                                                           | ML midterm answer.                                                                                                                      |
+| 24  | [BD_w10_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w10_hw.ipynb)                                                             | COVID-19 caused excess death across the glob.                                                                                           |
 
 ## Optional Code ideas
 
