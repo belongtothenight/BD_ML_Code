@@ -49,6 +49,7 @@ ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
 | 22  | [BD_midterm.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_midterm.ipynb)                                                           | BD midterm answer.                                                                                                                      |
 | 23  | [ML_midterm.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_midterm.ipynb)                                                           | ML midterm answer.                                                                                                                      |
 | 24  | [BD_w10_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w10_hw.ipynb)                                                             | COVID-19 caused excess death across the glob.                                                                                           |
+| 25  | [ML_w10_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w10_hw.ipynb)                                                             |                                                                                                                                         |
 
 ## Optional Code ideas
 
@@ -67,7 +68,7 @@ ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
 
 ## ML Process
 
-1. Prepare/Preprocess Data
+1. Prepare/Preprocess Data (the dataset need to appropriate for the question)
    1. Read dataset from file. (pandas/scipy.io.arff/python)
    2. Check features (X) correlation with result (y), and drop features with low correlation. Not necessary, but might help reduce time and not misleading algorithm. (pandas)
    3. Deal with missing values (NAN/NA). (pandas)
@@ -96,3 +97,17 @@ ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
    8. label ratio (dataset/python)
    9. model (sklearn)
    10. model parameters (ex: classweight) (sklearn)
+
+**Need to code a module for final test:**<br>
+
+- ML accessable features: process time (train/test), dataset size, weight, scale info, acc, pre, rec, f1, fitting based on iteration<br>
+   1. supports multiple different datasets
+   2. preprocess dataset and comment info about accessable features
+   3. support for multi-run tests to average out accessable features
+   4. supports multiple algorithms
+   5. with commends to test different stuff about accessable features
+   6. provide a table for questions like Q9 in ML_midterm.jpynb.
+- BD accessable features:
+   1. supports multiple different datasets
+   2. preprocess dataset
+   3. support all questions asked in hw
