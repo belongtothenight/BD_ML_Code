@@ -50,7 +50,7 @@ ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
 | 23  | [ML_midterm.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_midterm.ipynb)                                                           | ML midterm answer.                                                                                                                      |
 | 24  | [BD_w10_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w10_hw.ipynb)                                                             | COVID-19 caused excess death across the glob.                                                                                           |
 | 25  | [ML_w10_cn.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w10_cn.ipynb)                                                             | Overfitting, details about DT and RF.                                                                                                   |
-| 26  | [ML_w10_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w10_hw.ipynb)                                                             |                                                                                                                                         |
+| 26  | [ML_w10_DT_RF_DiveIn_Homework.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w10_DT_RF_DiveIn_Homework.ipynb)                       | Plot tree structure of trained result of given dataset.                                                                                 |
 
 ## Optional Code ideas
 
