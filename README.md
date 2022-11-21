@@ -51,6 +51,8 @@ ANY USAGE OF THIS REPO NEEDS TO BE INFORMED BEFOREHAND.
 | 24  | [BD_w10_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w10_hw.ipynb)                                                             | COVID-19 caused excess death across the glob.                                                                                           |
 | 25  | [ML_w10_cn.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w10_cn.ipynb)                                                             | Overfitting, details about DT and RF.                                                                                                   |
 | 26  | [ML_w10_DT_RF_DiveIn_Homework.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w10_DT_RF_DiveIn_Homework.ipynb)                       | Plot tree structure of trained result of given dataset.                                                                                 |
+| 27  | [BD_w11_ExcessDeathAndCovidDeathPhase1.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w11_ExcessDeathAndCovidDeathPhase1.ipynb)     | A clean and fast way to calculate excess death.                                                                                         |
+| 28  | [BD_w11_ReadMeFirst.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w11_ReadMeFirst.ipynb)                                           | How the excess death calculation approach is not logical.                                                                               |
 
 ## Optional Code ideas
 
