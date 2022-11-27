@@ -52,6 +52,7 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 | 26  | [ML_w10_DT_RF_DiveIn_Homework.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w10_DT_RF_DiveIn_Homework.ipynb)                       | Plot tree structure of trained result of given dataset.                                                                                 |
 | 27  | [BD_w11_ExcessDeathAndCovidDeathPhase1.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w11_ExcessDeathAndCovidDeathPhase1.ipynb)     | A clean and fast way to calculate excess death.                                                                                         |
 | 28  | [BD_w11_ReadMeFirst.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w11_ReadMeFirst.ipynb)                                           | How the excess death calculation approach is not logical.                                                                               |
+| 29  | [ML_w11_SVM_Homework.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w11_SVM_Homework.ipynb)                                         | Details of SVM.                                                                                                                         |
 
 ## Optional Code ideas
 
