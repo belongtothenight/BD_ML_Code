@@ -53,6 +53,7 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 | 27  | [BD_w11_ExcessDeathAndCovidDeathPhase1.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w11_ExcessDeathAndCovidDeathPhase1.ipynb)     | A clean and fast way to calculate excess death.                                                                                         |
 | 28  | [BD_w11_ReadMeFirst.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w11_ReadMeFirst.ipynb)                                           | How the excess death calculation approach is not logical.                                                                               |
 | 29  | [ML_w11_SVM_Homework.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w11_SVM_Homework.ipynb)                                         | Details of SVM.                                                                                                                         |
+| 30  | [BD_w12_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w12_hw.ipynb)                                                             | Demonstrate excess death changes in the range of 2020 to 2022.                                                                          |
 
 ## Optional Code ideas
 
