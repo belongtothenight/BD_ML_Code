@@ -57,9 +57,9 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 
 ## Optional Code ideas
 
-1. ML_w2_DecisionTree_DevelopmentTrend.py : use the data gathered while looping the algorithm and display as bar chart or line graph.
-2. ML_w3_MultiModelComparison.py : compare different models mentione in class.
-3. ML_w3_StdScalerPerformance.py : compare the difference with and without using scaler.
+1. ML_w2_DecisionTree_DevelopmentTrend.py: use the data gathered while looping the algorithm and display it as a bar chart or line graph.
+2. ML_w3_MultiModelComparison.py: compare different models mentioned in class.
+3. ML_w3_StdScalerPerformance.py: compare the difference with and without using the scaler.
 
 ## BD Process
 
@@ -68,16 +68,16 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
    2. Convert datatype. (str2timestamp, str2int, str2float, obj2str...)
 2. Plot Data (scatter not plot)
    1. Column to column.
-   2. Interaction between two column to column.
+   2. Interaction between two columns.
 
 ## ML Process
 
-1. Prepare/Preprocess Data (the dataset need to appropriate for the question)
-   1. Read dataset from file. (pandas/scipy.io.arff/python)
-   2. Check features (X) correlation with result (y), and drop features with low correlation. Not necessary, but might help reduce time and not misleading algorithm. (pandas)
+1. Prepare/Preprocess Data (the dataset needs to be appropriate for the question)
+   1. Read the dataset from the file. (pandas/scipy.io.arff/python)
+   2. Check features (X) correlation with the result (y), and drop features with low correlation. Not necessary, but might help reduce time and not mislead the algorithm. (pandas)
    3. Deal with missing values (NAN/NA). (pandas)
-   4. Convert non-numirical data to numbers representing them. (pandas)
-   5. (optional) Balance out imbalance dataset. (balance: one category of result like y=0 has a lot more data(rows) than the other/others.) (python)
+   4. Convert non-numerical data to numbers representing them. (pandas)
+   5. (optional) Balance out the imbalance dataset. (balance: one category of result like y=0 has a lot more data(rows) than the other/others.) (python)
    6. Split features (X) and result (y). (python)
    7. (optional) Scale dataset. (sklearn)
    8. Split dataset into either train+test or train+cross-validation+test subsets. (random state is optional) (sklearn)
@@ -96,7 +96,7 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
    3. recall (sklearn)
    4. f1 (sklearn)
    5. confusion matrix (sklearn)
-   6. seperate result from different models (pandas->groupby)
+   6. separate result from different models (pandas->groupby)
    7. scale ratio (dataset/python)
    8. label ratio (dataset/python)
    9. model (sklearn)
