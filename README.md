@@ -54,6 +54,8 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 | 28  | [BD_w11_ReadMeFirst.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w11_ReadMeFirst.ipynb)                                           | How the excess death calculation approach is not logical.                                                                               |
 | 29  | [ML_w11_SVM_Homework.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w11_SVM_Homework.ipynb)                                         | Details of SVM.                                                                                                                         |
 | 30  | [BD_w12_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w12_hw.ipynb)                                                             | Demonstrate excess death changes in the range of 2020 to 2022.                                                                          |
+| 31  | [ML_w12_hw.ipynb](https://github.com/belongtothenight/BD_MD_Code/blob/main/src/ML_w12_hw.ipynb)                                                             | Start using tf.keras                                                                                                                    |
+| 32  | [BD_w13_hw.ipynb](https://github.com/belongtothenight/BD_MD_Code/blob/main/src/BD_w13_hw.ipynb)                                                             | Adjust result of BD_w12_hw.jpynb.                                                                                                       |
 
 ## Optional Code ideas
 
