@@ -117,3 +117,9 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
    1. supports multiple different datasets
    2. preprocess dataset
    3. support all questions asked in hw
+
+## NN Models
+
+- It might perform better if the output node is strictly 1 result per node. (ML_w12_hw/w13 videos).
+- It might have better performance if the input data is properly scaled.
+- Sometimes it's not necessary to specify batch_size.
