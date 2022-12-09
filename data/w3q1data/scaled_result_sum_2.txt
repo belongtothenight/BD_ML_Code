@@ -1,4 +1,0 @@
-DT result:  Most significant effect parameter: ccp_alpha
-RF result:  Most significant effect parameter: min_impurity_decrease
-KNN result: Most significant effect parameter: n_neighbors
-SVC result: Most significant effect parameter: max_iter
