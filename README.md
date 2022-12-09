@@ -20,6 +20,18 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
   - sklearn
   - matplotlib
 
+## Utilized Datasets
+
+| No. | Name                                            | Source                                                                                        |
+| --- | ----------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 1   | Banking Dataset (EDA and binary classification) | <https://www.kaggle.com/code/rashmiranu/banking-dataset-eda-and-binary-classification/data>   |
+| 2   | CIFAR-10/100                                    | <https://www.cs.toronto.edu/~kriz/cifar.html>                                                 |
+| 3   | COVID-19 Dataset by Our World in Data           | <https://github.com/owid/covid-19-data>                                                       |
+| 4   | Pumpkin_Seeds_Dataset                           | <https://www.kaggle.com/datasets/muratkokludataset/pumpkin-seeds-dataset>                     |
+| 5   | Breast cancer wisconsin                         | <https://archive/ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data> |
+| 6   | World Mortality Dataset                         | <https://github.com/akarlinsky/world_mortality>                                               |
+| 7   | MINST in Tensorflow                             | <https://www.tensorflow.org/datasets/catalog/mnist>                                           |
+
 ## File Description
 
 | No. | Filename                                                                                                                                                    | Description                                                                                                                             |
@@ -56,6 +68,8 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 | 30  | [BD_w12_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w12_hw.ipynb)                                                             | Demonstrate excess death changes in the range of 2020 to 2022.                                                                          |
 | 31  | [ML_w12_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w12_hw.ipynb)                                                             | Start using tf.keras                                                                                                                    |
 | 32  | [BD_w13_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w13_hw.ipynb)                                                             | Adjust result of BD_w12_hw.jpynb.                                                                                                       |
+| 33  | [ML_w13_redoprehw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w13_redoprehw.ipynb)                                               | Redo "ML_w12_hw" with some adjustments.                                                                                                 |
+| 34  | [ML_w13_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w13_hw.ipynb)                                                             | CNN on CIFAR 10/100 dataset.                                                                                                            |
 
 ## Optional Code ideas
 
