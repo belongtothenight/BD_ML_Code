@@ -6,7 +6,7 @@ This repo contains all the codes from BD_ML course.
 
 ## Notice
 
-Scripts in this repo needs to be executed with IDE with the required libraries installed in local environment.<br><br>
+Scripts in this repo need to be executed with IDE with the required libraries installed in the local environment.<br><br>
 
 ## Development Environment
 
@@ -70,6 +70,8 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 | 32  | [BD_w13_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w13_hw.ipynb)                                                             | Adjust result of BD_w12_hw.jpynb.                                                                                                       |
 | 33  | [ML_w13_redoprehw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w13_redoprehw.ipynb)                                               | Redo "ML_w12_hw" with some adjustments.                                                                                                 |
 | 34  | [ML_w13_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w13_hw.ipynb)                                                             | CNN on CIFAR 10/100 dataset.                                                                                                            |
+| 35  | [ML_w14_redoprehw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_redoprehw.ipynb)                                               | CNN model fit successfully and accelerated by GPU                                                                                       |
+| 36  | [ML_w14_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.ipynb)                                                             | CNN testing.                                                                                                                            |
 
 ## Optional Code ideas
 
@@ -77,7 +79,9 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
 2. ML_w3_MultiModelComparison.py: compare different models mentioned in class.
 3. ML_w3_StdScalerPerformance.py: compare the difference with and without using the scaler.
 
-## BD Process
+## Developing Process
+
+### BD Process
 
 1. Prepare/Preprocess Data
    1. Remove unused columns.
@@ -86,7 +90,7 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
    1. Column to column.
    2. Interaction between two columns.
 
-## ML Process
+### ML Process
 
 1. Prepare/Preprocess Data (the dataset needs to be appropriate for the question)
    1. Read the dataset from the file. (pandas/scipy.io.arff/python)
@@ -96,7 +100,7 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
    5. (optional) Balance out the imbalance dataset. (balance: one category of result like y=0 has a lot more data(rows) than the other/others.) (python)
    6. Split features (X) and result (y). (python)
    7. (optional) Scale dataset. (sklearn)
-   8. Split dataset into either train+test or train+cross-validation+test subsets. (random state is optional) (sklearn)
+   8. Split the dataset into either train+test or train+cross-validation+test subsets. (random state is optional) (sklearn)
 2. Deploy Model
    1. Select model. (sklearn->supervised/unsupervised)
       1. Logistic Regression, LR.
@@ -112,28 +116,50 @@ Scripts in this repo needs to be executed with IDE with the required libraries i
    3. recall (sklearn)
    4. f1 (sklearn)
    5. confusion matrix (sklearn)
-   6. separate result from different models (pandas->groupby)
+   6. separate results from different models (pandas->groupby)
    7. scale ratio (dataset/python)
    8. label ratio (dataset/python)
    9. model (sklearn)
    10. model parameters (ex: classweight) (sklearn)
 
-**Need to code a module for final test:**<br>
+**Need to code a module for the final test:**<br>
 
-- ML accessable features: process time (train/test), dataset size, weight, scale info, acc, pre, rec, f1, fitting based on iteration<br>
+- ML accessible features: process time (train/test), dataset size, weight, scale info, acc, pre, rec, f1, fitting based on iteration<br>
    1. supports multiple different datasets
-   2. preprocess dataset and comment info about accessable features
-   3. support for multi-run tests to average out accessable features
+   2. preprocess dataset and comment info about accessible features
+   3. support for multi-run tests to average out accessible features
    4. supports multiple algorithms
-   5. with commends to test different stuff about accessable features
+   5. with commends to test different stuff about accessible features
    6. provide a table for questions like Q9 in ML_midterm.jpynb.
-- BD accessable features:
+- BD accessible features:
    1. supports multiple different datasets
    2. preprocess dataset
    3. support all questions asked in hw
 
-## NN Models
+### NN Models
 
 - It might perform better if the output node is strictly 1 result per node. (ML_w12_hw/w13 videos).
 - It might have better performance if the input data is properly scaled.
 - Sometimes it's not necessary to specify batch_size.
+
+## Enable GPU acceleration when using Keras or Tensorflow (20221216)
+
+### Steps
+
+1. Install Visual Studio Code
+2. Install Python 3.10.8
+3. Install VC++ <https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170>
+4. Install NVIDIA GPU drivers <https://www.nvidia.com/download/index.aspx?lang=en-us>
+5. Install CUDA Toolkit 11.2 <https://developer.nvidia.com/cuda-toolkit-archive>
+6. Install cuDNN SDK 8.1.0 <https://developer.nvidia.com/rdp/cudnn-archive>
+
+### Verification
+
+1. Verify Installation <https://www.tensorflow.org/install/pip> - 7. Verify install
+2. Enable Tensorflow GPU acceleration: <https://stackoverflow.com/questions/45662253/can-i-run-keras-model-on-gpu>
+
+### Sources
+
+1. <https://www.tensorflow.org/install/source#gpu>
+2. <https://www.tensorflow.org/install/pip>
+3. <https://stackoverflow.com/questions/45662253/can-i-run-keras-model-on-gpu>
