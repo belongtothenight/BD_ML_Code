@@ -11,6 +11,13 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 ## Development Environment
 
 - Windows 11
+  - Keras
+  - TensorFlow (with GPU acceleration, check how to install below)
+  - pandas
+  - numpy
+  - sklearn
+  - matplotlib
+  - wandb
 
 - Anaconda Jupyter Notebook
   - Keras
@@ -71,7 +78,8 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 | 33  | [ML_w13_redoprehw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w13_redoprehw.ipynb)                                               | Redo "ML_w12_hw" with some adjustments.                                                                                                 |
 | 34  | [ML_w13_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w13_hw.ipynb)                                                             | CNN on CIFAR 10/100 dataset.                                                                                                            |
 | 35  | [ML_w14_redoprehw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_redoprehw.ipynb)                                               | CNN model fit successfully and accelerated by GPU                                                                                       |
-| 36  | [ML_w14_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.ipynb)                                                             | CNN testing.                                                                                                                            |
+| 36  | [ML_w14_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.ipynb)                                                             | Build CNN module for multiple models and extra features like export models, learning curve, prediction image.                           |
+| 37  | [ML_w14_hw.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.py)                                                                   | Loop executing built CNN module in both building and testing models.                                                                                                                            |
 
 ## Optional Code ideas
 

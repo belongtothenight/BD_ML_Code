@@ -5,6 +5,7 @@ from keras.utils import np_utils
 from keras.preprocessing.image import ImageDataGenerator
 from matplotlib.ticker import FormatStrFormatter
 from matplotlib import pyplot as plt
+from matplotlib import gridspec as gridspec
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, classification_report, ConfusionMatrixDisplay
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
@@ -45,6 +46,11 @@ tf.compat.v1.Session(
 
 class CNN():
     def __init__(self, X_train, y_train, X_test, y_test):
+        # data variables
+        self.X_train = X_train
+        self.y_train = y_train
+        self.X_test = X_test
+        self.y_test = y_test
         # stats variables
         self.stats_dict = {
             'model_name': None,
@@ -56,7 +62,11 @@ class CNN():
             'testing_time': None,
             'loss': None,
             'accuracy': None,
+            'evaluating_proba_time': None,
         }
+        # labels
+        self.label = {0: "airplane", 1: "automobile", 2: "bird", 3: "cat",
+                      4: "deer", 5: "dog", 6: "frog", 7: "horse", 8: "ship", 9: "truck"}
         current_time = str(time.strftime(
             "%Y/%m/%d %H:%M:%S", time.localtime()))
         self.stats_dict['time'] = current_time
@@ -166,7 +176,7 @@ class CNN():
         self.stats_dict['batch_size'] = batch_size
         start = timer()
         self.history = self.model.fit(
-            X_train, y_train, epochs=epochs, batch_size=batch_size, verbose=verbose)
+            self.X_train, self.y_train, epochs=epochs, batch_size=batch_size, verbose=verbose)
         self.stats_dict['training_time'] = timer() - start
         # self.model.summary()
 
@@ -202,9 +212,6 @@ class CNN():
         meta_data.to_csv(path, encoding='utf-8')
         print('Meta data exported to', path)
 
-    def load_model(self, path):
-        self.model = load_model(path)
-
     def evaluate(self):
         # record loss and accuracy
         start = timer()
@@ -213,17 +220,102 @@ class CNN():
         self.stats_dict['accuracy'] = result[1]
         self.stats_dict['testing_time'] = timer() - start
 
-    def evaluate1(self):
+    def load_model(self, path):
+        self.model = load_model(path)
+        self.model_name = os.path.basename(path).split('.')[0]
+
+    def evaluate_proba(self, img_row_num=2, img_col_num=5, display_bar_num=3, random=False, start_img_num=0, save=False, path='', show=True):
         # top 1 accuracy
-        pass
-
-    def evaluate2(self):
-        # top 3 accuracy
-        pass
-
-    def evaluate3(self):
-        # top 5 accuracy
-        pass
+        '''
+        display images and their predicted probabilities
+        -----------------------------------------------------------------------
+        start_img_num: start image number (necessary if random=False)
+        save_img_path: path to save images
+        img_row_num: number of rows of images
+        img_col_num: number of columns of images
+        display_bar_num: number of bars to display (probability of each class)
+        random: if True, select images randomly
+        save: if True, save images
+        show: if True, show images
+        -----------------------------------------------------------------------
+        src: https://stackoverflow.com/questions/34933905/matplotlib-adding-subplots-to-a-subplot
+        '''
+        start = timer()
+        model = self.model
+        X_test = self.X_test
+        y_test = self.y_test
+        label = self.label
+        model_name = self.model_name
+        # load test data (images)
+        image_count = img_row_num * img_col_num
+        test_image_count = X_test.shape[0]
+        if random:
+            selected_image_indexes = np.random.choice(
+                a=test_image_count, size=image_count, replace=False)
+            selected_image = X_test[selected_image_indexes]
+        else:
+            selected_image_indexes = np.arange(
+                start=start_img_num, stop=start_img_num+image_count)
+            selected_image = X_test[selected_image_indexes]
+        # predict
+        probabilities = model.predict(selected_image)
+        # calculate prediction accuracy
+        correct_count = 0
+        for i in range(image_count):
+            prediction = np.argmax(probabilities[i])
+            answer = np.argmax(y_test[selected_image_indexes[i]])
+            if prediction == answer:
+                correct_count += 1
+        accuracy = correct_count / image_count * 100
+        # plot
+        fig = plt.figure(figsize=(img_col_num*2, img_row_num*2), dpi=300)
+        plt.title(
+            f'Top {display_bar_num} Accuracy of {image_count} Images ({img_col_num} x {img_row_num})\nAccuracy of this batch: {accuracy:.2f}%', pad=30)
+        plt.axis('off')
+        outer = gridspec.GridSpec(
+            img_row_num, img_col_num, wspace=0.1, hspace=0.1)
+        for i in range(image_count):
+            prediction = label[np.argmax(probabilities[i])]
+            answer = label[np.argmax(y_test[selected_image_indexes[i]])]
+            x = i//img_col_num
+            y = i % img_col_num
+            inner = gridspec.GridSpecFromSubplotSpec(
+                2, 1, subplot_spec=outer[i], wspace=0.1, hspace=0.1)
+            # plot image
+            ax = plt.Subplot(fig, inner[0])
+            ax.set_title(f'{prediction} ({answer})', fontsize=8)
+            ax.imshow(selected_image[i])
+            ax.axis('off')
+            fig.add_subplot(ax)
+            # get top x probabilities
+            temp_probabilities = (copy.copy(probabilities[i])).tolist()
+            temp_probabilities.sort(reverse=True)
+            temp_probabilities = temp_probabilities[:display_bar_num]
+            temp_label = []
+            for j in temp_probabilities:
+                prob_list = probabilities[i].tolist()
+                index = prob_list.index(j)
+                temp_label.append(label[index])
+            # plot bar
+            ax = plt.Subplot(fig, inner[1])
+            ax.barh(np.arange(display_bar_num),
+                    temp_probabilities, align='center', alpha=0.5)
+            for element in temp_label:
+                text = f'{element} ({temp_probabilities[temp_label.index(element)]*100:.2f}%)'
+                ax.text(0.01, temp_label.index(element),
+                        text, fontsize=6, va='center')
+            ax.invert_yaxis()
+            ax.axis('off')
+            fig.add_subplot(ax)
+        if save:
+            path = os.path.join(
+                path, '{}_eval_top{}_{}x{}_{}-{}.png'.format(model_name, display_bar_num, img_col_num, img_row_num, start_img_num, start_img_num+image_count))
+            plt.savefig(path)
+        if show:
+            plt.show()
+        plt.close()
+        print('Image exported to', path)
+        self.stats_dict['evaluating_proba_time'] = timer() - start
 
     def clear_mem(self):
         # https://www.kaggle.com/getting-started/140636
@@ -249,13 +341,56 @@ class CNN():
         plt.xlabel('Epoch')
         # plt.legend(loc='lower right')
         # save
-        path = os.path.join(path, f'{model_name}_{self.current_time}.png')
+        path = os.path.join(
+            path, f'{model_name}_{self.current_time}_train_hist.png')
         plt.savefig(path)
         plt.close()
 
 
+class LOOP_EXECUTOR():
+    def loop_build_model(loop_times, X_train, y_train, X_test, y_test, epochs, batch_size, model_root_path, eval_root_path):
+        '''
+        Create and store all models multiple times
+        '''
+        for i in range(loop_times):
+            for j in range(1, 5+1):
+                model_name = f'model{j}'
+                cnn = CNN(X_train=X_train, y_train=y_train,
+                          X_test=X_test, y_test=y_test)
+                cnn.build_model(model_num=j)
+                cnn.train_model(
+                    epochs=epochs, batch_size=batch_size, verbose=1)
+                cnn.plot_history(model_name=model_name, path=eval_root_path)
+                cnn.store_model(model_name=model_name, path=model_root_path)
+                cnn.evaluate()
+                cnn.store_meta_data(model_name=model_name,
+                                    path=model_root_path)
+            print('progress: {}/{}'.format(i+1, loop_times))
+        print('Done building all models')
+
+    def loop_eval_model(X_train, y_train, X_test, y_test, model_root_path, eval_root_path):
+        '''
+        Loop through all models in model_root_path and evaluate them
+        '''
+        files = []
+        for r, d, f in os.walk(model_root_path):
+            for file in f:
+                if file.endswith(".h5"):
+                    files.append(os.path.join(r, file))
+        for i in range(len(files)):
+            cnn = CNN(X_train=X_train, y_train=y_train,
+                      X_test=X_test, y_test=y_test)
+            cnn.load_model(path=files[i])
+            cnn.evaluate_proba(img_row_num=4, img_col_num=6,
+                               display_bar_num=3, random=False, start_img_num=10,
+                               save=True, path=eval_root_path, show=False)
+            print('progress: {}/{}'.format(i+1, len(files)))
+        print('Done evaluating all models')
+
+
 if __name__ == '__main__':
     os.system('cls')
+    wandb.init()
     ##############################################################################
     # 1. Load the CIFAR-10 dataset & Preprocess the data
     (X_train, y_train), (X_test, y_test) = cifar10.load_data()
@@ -266,22 +401,16 @@ if __name__ == '__main__':
     # 2. Set user parameters
     model_root_path = os.path.join(
         os.getcwd().rstrip('src'), 'data', 'ml_w14_hw')
+    eval_root_path = os.path.join(
+        os.getcwd().rstrip('src'), 'pic', 'ML_w14_hw')
+    model_root_path = os.path.join(model_root_path, 'finished_models')
     epochs = 150
     batch_size = 1024
     loop_times = 30
 
     ##############################################################################
     # 3. Loop testing models
-    wandb.init()
-    for i in range(loop_times):
-        for j in range(1, 5+1):
-            # gpu_usage()
-            model_name = f'model{j}'
-            cnn = CNN(X_train=X_train, y_train=y_train,
-                      X_test=X_test, y_test=y_test)
-            cnn.build_model(model_num=j)
-            cnn.train_model(epochs=epochs, batch_size=batch_size, verbose=1)
-            cnn.plot_history(model_name=model_name, path=model_root_path)
-            cnn.store_model(model_name=model_name, path=model_root_path)
-            cnn.evaluate()
-            cnn.store_meta_data(model_name=model_name, path=model_root_path)
+    # LOOP_EXECUTOR.loop_build_model(loop_times=loop_times, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
+    #                                epochs=epochs, batch_size=batch_size, model_root_path=model_root_path, eval_root_path=eval_root_path)
+    LOOP_EXECUTOR.loop_eval_model(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
+                                  model_root_path=model_root_path, eval_root_path=eval_root_path)
