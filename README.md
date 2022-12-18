@@ -38,6 +38,7 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 | 5   | Breast cancer wisconsin                         | <https://archive/ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data> |
 | 6   | World Mortality Dataset                         | <https://github.com/akarlinsky/world_mortality>                                               |
 | 7   | MINST in Tensorflow                             | <https://www.tensorflow.org/datasets/catalog/mnist>                                           |
+| 8   | Taiwan Death Detail                             | Unknown                                                                                       |
 
 ## File Description
 
@@ -79,7 +80,8 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 | 34  | [ML_w13_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w13_hw.ipynb)                                                             | CNN on CIFAR 10/100 dataset.                                                                                                            |
 | 35  | [ML_w14_redoprehw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_redoprehw.ipynb)                                               | CNN model fit successfully and accelerated by GPU                                                                                       |
 | 36  | [ML_w14_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.ipynb)                                                             | Build CNN module for multiple models and extra features like export models, learning curve, prediction image.                           |
-| 37  | [ML_w14_hw.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.py)                                                                   | Loop executing built CNN module in both building and testing models.                                                                                                                            |
+| 37  | [ML_w14_hw.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.py)                                                                   | Loop executing built CNN module in both building and testing models.                                                                    |
+| 38  | [BD_w14_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w14_hw.ipynb)                                                             | Try to use really messed up Taiwan COVID-19 Death Detail dataset.                                                                       |
 
 ## Optional Code ideas
 
