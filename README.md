@@ -83,6 +83,7 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 | 37  | [ML_w14_hw.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.py)                                                                   | Loop executing built CNN module in both building and testing models.                                                                    |
 | 38  | [BD_w14_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w14_hw.ipynb)                                                             | Try to use really messed up Taiwan COVID-19 Death Detail dataset.                                                                       |
 | 39  | [BD_w15_redoprehw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w15_redoprehw.ipynb)                                               | Redo COVID-19 mortality scatter plot with correct result.                                                                               |
+| 40  | [BD_w15_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w15_hw.ipynb)                                                             | Try to use really messed up Taiwan COVID-19 Death Detail dataset.                                                                       |
 
 ## Optional Code ideas
 
