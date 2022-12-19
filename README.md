@@ -82,6 +82,7 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 | 36  | [ML_w14_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.ipynb)                                                             | Build CNN module for multiple models and extra features like export models, learning curve, prediction image.                           |
 | 37  | [ML_w14_hw.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w14_hw.py)                                                                   | Loop executing built CNN module in both building and testing models.                                                                    |
 | 38  | [BD_w14_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w14_hw.ipynb)                                                             | Try to use really messed up Taiwan COVID-19 Death Detail dataset.                                                                       |
+| 39  | [BD_w15_redoprehw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w15_redoprehw.ipynb)                                               | Redo COVID-19 mortality scatter plot with correct result.                                                                               |
 
 ## Optional Code ideas
 
@@ -99,6 +100,8 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 2. Plot Data (scatter not plot)
    1. Column to column.
    2. Interaction between two columns.
+
+Don't use 'concate' in most cases since some data in column might be missing, and it can cause a lot of errors.
 
 ### ML Process
 
