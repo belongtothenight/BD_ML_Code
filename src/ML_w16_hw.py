@@ -122,9 +122,13 @@ class CNN():
             'batch_size': None,
             'building_time': None,
             'training_time': None,
+            # 'training_loss': None,
+            # 'training_accuracy': None,
             'testing_time': None,
-            'loss': None,
-            'accuracy': None,
+            # 'testing_loss': None,
+            # 'testing_accuracy': None,
+            'loss': None,  # testing loss
+            'accuracy': None,  # testing accuracy
             'evaluating_proba_time': None,
         }
         # labels
