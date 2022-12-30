@@ -492,19 +492,24 @@ class LOOP_EXECUTOR():
         '''
         Loop through all models in model_root_path and evaluate them
         '''
+        def single_run(i, file):
+            cnn = CNN(X_train=X_train, y_train=y_train,
+                      X_test=X_test, y_test=y_test)
+            cnn.load_model(path=file)
+            cnn.evaluate_proba(img_row_num=4, img_col_num=6,
+                               display_bar_num=3, random=False, start_img_num=10,
+                               save=True, path=eval_root_path, show=False)
+
         files = []
         for r, d, f in os.walk(model_root_path):
             for file in f:
                 if file.endswith(".h5"):
                     files.append(os.path.join(r, file))
         for i in range(len(files)):
-            cnn = CNN(X_train=X_train, y_train=y_train,
-                      X_test=X_test, y_test=y_test)
-            cnn.load_model(path=files[i])
-            cnn.evaluate_proba(img_row_num=4, img_col_num=6,
-                               display_bar_num=3, random=False, start_img_num=10,
-                               save=True, path=eval_root_path, show=False)
-            print('{}progress: {}/{}{}'.format(bcolors.OKGREEN,
+            p = mp.Process(target=single_run, args=(i, files[i]))
+            p.start()
+            p.join()
+            print('{}>> progress: {}/{}{}'.format(bcolors.OKGREEN,
                   i+1, len(files), bcolors.ENDC))
         print('{}Done evaluating all models{}'.format(
             bcolors.OKGREEN, bcolors.ENDC))
@@ -539,7 +544,7 @@ if __name__ == '__main__':
     model_root_path = os.path.join(model_root_path, 'finished_models')
     epochs = 150
     batch_size = 1000
-    loop_times = 1
+    loop_times = 3
     model_st_num = 1
     model_end_num = 6
 
