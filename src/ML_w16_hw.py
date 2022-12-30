@@ -39,7 +39,7 @@ import statistics as stt
 import seaborn as sns
 import pickle
 import sys
-sns.set_theme()
+sns.set_theme(style="whitegrid")
 tf.compat.v1.Session(
     config=tf.compat.v1.ConfigProto(log_device_placement=True))
 
@@ -433,6 +433,10 @@ class LOOP_EXECUTOR():
         '''
         for i in range(loop_times):
             for j in range(model_st_num, model_end_num+1):
+                # https://www.tensorflow.org/guide/gpu ??????
+                # tf.compat.v1.Session(
+                #     config=tf.compat.v1.ConfigProto(log_device_placement=True))
+                #
                 model_name = f'model{j}'
                 cnn = CNN(X_train=X_train, y_train=y_train,
                           X_test=X_test, y_test=y_test)
@@ -495,7 +499,7 @@ if __name__ == '__main__':
     epochs = 150
     batch_size = 1000
     loop_times = 30
-    model_st_num = 6
+    model_st_num = 1
     model_end_num = 6
 
     ##############################################################################
