@@ -21,6 +21,7 @@ from timeit import default_timer as timer
 from GPUtil import showUtilization as gpu_usage
 from numba import cuda
 import keras.datasets.cifar10 as cifar10
+import keras.datasets.cifar100 as cifar100
 import tensorflow as tf
 import numba
 import torch
@@ -39,9 +40,21 @@ import statistics as stt
 import seaborn as sns
 import pickle
 import sys
+import multiprocess as mp
 sns.set_theme(style="whitegrid")
-tf.compat.v1.Session(
-    config=tf.compat.v1.ConfigProto(log_device_placement=True))
+
+
+class bcolors:
+    # https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 
 class ImgPrep():
@@ -122,13 +135,13 @@ class CNN():
             'batch_size': None,
             'building_time': None,
             'training_time': None,
-            # 'training_loss': None,
-            # 'training_accuracy': None,
+            'training_loss': None,
+            'training_accuracy': None,
             'testing_time': None,
-            # 'testing_loss': None,
-            # 'testing_accuracy': None,
-            'loss': None,  # testing loss
-            'accuracy': None,  # testing accuracy
+            'testing_loss': None,
+            'testing_accuracy': None,
+            # 'loss': None,  # testing loss
+            # 'accuracy': None,  # testing accuracy
             'evaluating_proba_time': None,
         }
         # labels
@@ -142,6 +155,7 @@ class CNN():
         self.current_time = current_time
 
     def build_model(self, model_num=1):
+        print('{}>> Building model...{}'.format(bcolors.OKGREEN, bcolors.ENDC))
         start = timer()
         model = Sequential()
         if model_num == 1:
@@ -253,35 +267,42 @@ class CNN():
                       optimizer='adam', metrics=['accuracy'])
         self.model = model
         self.stats_dict['building_time'] = timer() - start
+        print('{}>> Model built.{}'.format(bcolors.OKGREEN, bcolors.ENDC))
 
     def train_model(self, epochs=5, batch_size=500, verbose=1):
+        print('{}>> Training model...{}'.format(bcolors.OKGREEN, bcolors.ENDC))
         self.stats_dict['epochs'] = epochs
         self.stats_dict['batch_size'] = batch_size
         start = timer()
         self.history = self.model.fit(
             self.X_train, self.y_train, epochs=epochs, batch_size=batch_size, verbose=verbose)
+        self.stats_dict['training_accuracy'] = self.history.history['accuracy'][-1]
+        self.stats_dict['training_loss'] = self.history.history['loss'][-1]
         self.stats_dict['training_time'] = timer() - start
         # self.model.summary()
+        print('{}>> Model trained.{}'.format(bcolors.OKGREEN, bcolors.ENDC))
 
     def store_model(self, model_name, path=''):
+        print('{}>> Storing model...{}'.format(bcolors.OKGREEN, bcolors.ENDC))
         path = os.path.join(path, f'{model_name}_{self.current_time}.h5')
-        print(path)
         self.model.save(path)
+        print('{}>> Model stored at {}.{}'.format(
+            bcolors.OKGREEN, path, bcolors.ENDC))
         self.stats_dict['model_name'] = model_name
         self.stats_dict['model_file_path'] = path
 
     def store_meta_data(self, model_name, path=''):
         # check empty values
+        print('{}>> Storing meta data...{}'.format(
+            bcolors.OKGREEN, bcolors.ENDC))
         values = list(self.stats_dict.values())
         if None in values:
             arr = []
             for element in self.stats_dict:
                 if self.stats_dict[element] == None:
                     arr.append(element)
-            ans = input(
-                f'Not all stats are recorded...\nThese stats are not recorded: {arr}\nDo you still want to export? (y/[n]): ')
-            if ans != 'y':
-                return
+            print(
+                f'{bcolors.WARNING}>> These stats are not recorded: {arr}{bcolors.ENDC}')
 
         # read meta data, append, and write
         path = os.path.join(path, 'model_meta_data.csv')
@@ -293,19 +314,26 @@ class CNN():
         else:
             meta_data = pd.DataFrame(self.stats_dict, index=[0])
         meta_data.to_csv(path, encoding='utf-8')
-        print('Meta data exported to', path)
+        print('{}>> Meta data exported to {}{}'.format(
+            bcolors.OKGREEN, path, bcolors.ENDC))
 
     def evaluate(self):
         # record loss and accuracy
+        print('{}>> Evaluating model...{}'.format(
+            bcolors.OKGREEN, bcolors.ENDC))
         start = timer()
-        result = self.model.evaluate(X_test, y_test)
-        self.stats_dict['loss'] = result[0]
-        self.stats_dict['accuracy'] = result[1]
+        result = self.model.evaluate(self.X_test, self.y_test)
+        self.stats_dict['testing_loss'] = result[0]
+        self.stats_dict['testing_accuracy'] = result[1]
         self.stats_dict['testing_time'] = timer() - start
+        print('{}>> Evaluation finished{}'.format(
+            bcolors.OKGREEN, bcolors.ENDC))
 
     def load_model(self, path):
+        print('{}>> Loading model...{}'.format(bcolors.OKGREEN, bcolors.ENDC))
         self.model = load_model(path)
         self.model_name = os.path.basename(path).split('.')[0]
+        print('{}>> Model loaded{}'.format(bcolors.OKGREEN, bcolors.ENDC))
 
     def evaluate_proba(self, img_row_num=2, img_col_num=5, display_bar_num=3, random=False, start_img_num=0, save=False, path='', show=True):
         # top 1 accuracy
@@ -323,6 +351,8 @@ class CNN():
         -----------------------------------------------------------------------
         src: https://stackoverflow.com/questions/34933905/matplotlib-adding-subplots-to-a-subplot
         '''
+        print('{}>> Evaluating probabilities...{}'.format(
+            bcolors.OKGREEN, bcolors.ENDC))
         start = timer()
         model = self.model
         X_test = self.X_test
@@ -397,18 +427,13 @@ class CNN():
         if show:
             plt.show()
         plt.close()
-        print('Image exported to', path)
+        print('{}>> Image exported to {}{}'.format(
+            bcolors.OKGREEN, path, bcolors.ENDC))
         self.stats_dict['evaluating_proba_time'] = timer() - start
 
-    def clear_mem(self):
-        # https://www.kaggle.com/getting-started/140636
-        torch.cuda.empty_cache()
-        cuda.select_device(0)
-        cuda.close()
-        cuda.select_device(0)
-        print('Cleared GPU memory')
-
     def plot_history(self, model_name, path):
+        print('{}>> Plotting training history...{}'.format(
+            bcolors.OKGREEN, bcolors.ENDC))
         history = self.history
         plt.figure(figsize=(20, 20), dpi=300)
         # plot loss
@@ -428,33 +453,40 @@ class CNN():
             path, f'{model_name}_{self.current_time}_train_hist.png')
         plt.savefig(path)
         plt.close()
+        print('{}>> History exported to {}{}'.format(
+            bcolors.OKGREEN, path, bcolors.ENDC))
 
 
 class LOOP_EXECUTOR():
     def loop_build_model(model_st_num, model_end_num, loop_times, X_train, y_train, X_test, y_test, epochs, batch_size, model_root_path, eval_root_path):
         '''
         Create and store all models multiple times
+        Use multiprocess to release GPU memory by killing processes
         '''
+        def single_run(j):
+            tf.compat.v1.Session(
+                config=tf.compat.v1.ConfigProto(log_device_placement=True))
+            model_name = f'model{j}'
+            cnn = CNN(X_train=X_train, y_train=y_train,
+                      X_test=X_test, y_test=y_test)
+            cnn.build_model(model_num=j)
+            cnn.train_model(
+                epochs=epochs, batch_size=batch_size, verbose=1)
+            cnn.plot_history(model_name=model_name, path=eval_root_path)
+            cnn.store_model(model_name=model_name, path=model_root_path)
+            cnn.evaluate()
+            cnn.store_meta_data(model_name=model_name,
+                                path=model_root_path)
+
         for i in range(loop_times):
             for j in range(model_st_num, model_end_num+1):
-                # https://www.tensorflow.org/guide/gpu ??????
-                # try to release GPU memory
-                # tf.compat.v1.Session(
-                #     config=tf.compat.v1.ConfigProto(log_device_placement=True))
-                #
-                model_name = f'model{j}'
-                cnn = CNN(X_train=X_train, y_train=y_train,
-                          X_test=X_test, y_test=y_test)
-                cnn.build_model(model_num=j)
-                cnn.train_model(
-                    epochs=epochs, batch_size=batch_size, verbose=1)
-                cnn.plot_history(model_name=model_name, path=eval_root_path)
-                cnn.store_model(model_name=model_name, path=model_root_path)
-                cnn.evaluate()
-                cnn.store_meta_data(model_name=model_name,
-                                    path=model_root_path)
-            print('progress: {}/{}'.format(i+1, loop_times))
-        print('Done building all models')
+                p = mp.Process(target=single_run, args=(j,))
+                p.start()
+                p.join()
+            print('{}>> progress: {}/{}{}'.format(bcolors.OKGREEN,
+                  i+1, loop_times, bcolors.ENDC))
+        print('{}>> Done building all models{}'.format(
+            bcolors.OKGREEN, bcolors.ENDC))
 
     def loop_eval_model(X_train, y_train, X_test, y_test, model_root_path, eval_root_path):
         '''
@@ -472,8 +504,10 @@ class LOOP_EXECUTOR():
             cnn.evaluate_proba(img_row_num=4, img_col_num=6,
                                display_bar_num=3, random=False, start_img_num=10,
                                save=True, path=eval_root_path, show=False)
-            print('progress: {}/{}'.format(i+1, len(files)))
-        print('Done evaluating all models')
+            print('{}progress: {}/{}{}'.format(bcolors.OKGREEN,
+                  i+1, len(files), bcolors.ENDC))
+        print('{}Done evaluating all models{}'.format(
+            bcolors.OKGREEN, bcolors.ENDC))
 
 
 if __name__ == '__main__':
@@ -490,20 +524,22 @@ if __name__ == '__main__':
     X_test = datas.X_test
     y_test = datas.y_test
     del datas
-    print('Data loaded')
-    print('training set shape:', X_train.shape)
-    print('testing set shape:', X_test.shape)
+    print('{}>> Data loaded{}'.format(bcolors.OKGREEN, bcolors.ENDC))
+    print('{}>> training set shape:{}{}'.format(
+        bcolors.OKGREEN, X_train.shape, bcolors.ENDC))
+    print('{}>> testing set shape:{}{}'.format(
+        bcolors.OKGREEN, X_test.shape, bcolors.ENDC))
 
     ##############################################################################
     # 2. Set user parameters
     model_root_path = os.path.join(
-        os.getcwd().rstrip('src'), 'data', 'ml_w14_hw')
+        os.getcwd().rstrip('src'), 'data', 'ml_w16_hw')
     eval_root_path = os.path.join(
-        os.getcwd().rstrip('src'), 'pic', 'ML_w14_hw')
+        os.getcwd().rstrip('src'), 'pic', 'ML_w16_hw')
     model_root_path = os.path.join(model_root_path, 'finished_models')
     epochs = 150
     batch_size = 1000
-    loop_times = 30
+    loop_times = 1
     model_st_num = 1
     model_end_num = 6
 
