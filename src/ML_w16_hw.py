@@ -547,5 +547,5 @@ if __name__ == '__main__':
     # 3. Loop testing models
     LOOP_EXECUTOR.loop_build_model(model_st_num=model_st_num, model_end_num=model_end_num, loop_times=loop_times, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
                                    epochs=epochs, batch_size=batch_size, model_root_path=model_root_path, eval_root_path=eval_root_path)
-    # LOOP_EXECUTOR.loop_eval_model(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
-    #                               model_root_path=model_root_path, eval_root_path=eval_root_path)
+    LOOP_EXECUTOR.loop_eval_model(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
+                                  model_root_path=model_root_path, eval_root_path=eval_root_path)
