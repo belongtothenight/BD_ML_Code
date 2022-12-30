@@ -434,6 +434,7 @@ class LOOP_EXECUTOR():
         for i in range(loop_times):
             for j in range(model_st_num, model_end_num+1):
                 # https://www.tensorflow.org/guide/gpu ??????
+                # try to release GPU memory
                 # tf.compat.v1.Session(
                 #     config=tf.compat.v1.ConfigProto(log_device_placement=True))
                 #
