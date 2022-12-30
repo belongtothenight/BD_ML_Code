@@ -44,7 +44,70 @@ tf.compat.v1.Session(
     config=tf.compat.v1.ConfigProto(log_device_placement=True))
 
 
+class ImgPrep():
+    '''
+    This class is used to prepare the images for the model.
+    Methods below are used to increase training set size.
+    Becareful when using the methods, they increase the dataset dramatically and can easily exhaust your ram.
+    For example, if using all methods, the dataset will increase by 16 times. (for cifar10, 50000 -> 800000, require 36.6 GiB of memory)
+    If during training, you encounter the error '_EagerConst: Dst tensor is not initialized', try to reduce the batch size.
+    '''
+
+    def __init__(self, data='cifar10') -> None:
+        if data == 'cifar10':
+            (X_train, y_train), (X_test, y_test) = cifar10.load_data()
+            labels = {0: 'airplane', 1: 'automobile', 2: 'bird', 3: 'cat',
+                      4: 'deer', 5: 'dog', 6: 'frog', 7: 'horse', 8: 'ship', 9: 'truck'}
+            y_train = np_utils.to_categorical(y_train, 10)
+            y_test = np_utils.to_categorical(y_test, 10)
+        elif data == 'cifar100':
+            (X_train, y_train), (X_test, y_test) = cifar100.load_data()
+            # label is still unavailable
+            y_train = np_utils.to_categorical(y_train, 100)
+            y_test = np_utils.to_categorical(y_test, 100)
+        elif data == 'Fashion MINST':
+            (X_train, y_train), (X_test,
+                                 y_test) = tf.keras.datasets.fashion_mnist.load_data()
+            labels = {0: 'T-shirt/top', 1: 'Trouser', 2: 'Pullover', 3: 'Dress',
+                      4: 'Coat', 5: 'Sandal', 6: 'Shirt', 7: 'Sneaker', 8: 'Bag', 9: 'Ankle boot'}
+            y_train = np_utils.to_categorical(y_train, 10)
+            y_test = np_utils.to_categorical(y_test, 10)
+        self.X_train = X_train
+        self.y_train = y_train
+        self.X_test = X_test
+        self.y_test = y_test
+        self.labels = labels
+
+    def flip_img(self) -> None:
+        X_train1 = [np.flip(i) for i in self.X_train]
+        X_train2 = [np.fliplr(i) for i in self.X_train]
+        X_train3 = [np.flipud(i) for i in self.X_train]
+        self.X_train = np.concatenate(
+            (self.X_train, X_train1, X_train2, X_train3))
+        self.y_train = np.concatenate(
+            (self.y_train, self.y_train, self.y_train, self.y_train))
+
+    def rotate_img(self) -> None:
+        X_train1 = [np.rot90(i, k=1) for i in self.X_train]
+        X_train2 = [np.rot90(i, k=2) for i in self.X_train]
+        X_train3 = [np.rot90(i, k=3) for i in self.X_train]
+        self.X_train = np.concatenate(
+            (self.X_train, X_train1, X_train2, X_train3))
+        self.y_train = np.concatenate(
+            (self.y_train, self.y_train, self.y_train, self.y_train))
+
+    def noise_img(self) -> None:
+        X_train1 = [np.random.normal(i, 0.1) for i in self.X_train]
+        self.X_train = np.concatenate((self.X_train, X_train1))
+        self.y_train = np.concatenate((self.y_train, self.y_train))
+
+
 class CNN():
+    '''
+    This class is used to build, train, test, and evaluate the model.
+    Currently only support CIFAR10
+    '''
+
     def __init__(self, X_train, y_train, X_test, y_test):
         # data variables
         self.X_train = X_train
@@ -82,7 +145,7 @@ class CNN():
             channel2 = 200
             channel3 = 400
             model.add(Conv2D(channel1, (9, 9),
-                             input_shape=X_train.shape[1:], activation='relu'))
+                             input_shape=self.X_train.shape[1:], activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
             model.add(Conv2D(channel2, (5, 5), activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
@@ -96,7 +159,7 @@ class CNN():
             model.add(Dense(10, activation='softmax'))
         elif model_num == 2:
             model.add(Conv2D(32, (3, 3),
-                             input_shape=X_train.shape[1:], activation='relu'))
+                             input_shape=self.X_train.shape[1:], activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
             model.add(Conv2D(64, (3, 3), activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
@@ -112,7 +175,7 @@ class CNN():
             model.add(Dense(10, activation='softmax'))
         elif model_num == 3:
             model.add(Conv2D(32, (3, 3),
-                             input_shape=X_train.shape[1:], activation='relu'))
+                             input_shape=self.X_train.shape[1:], activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
             model.add(Conv2D(64, (3, 3), activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
@@ -130,7 +193,7 @@ class CNN():
             model.add(Dense(10, activation='softmax'))
         elif model_num == 4:
             model.add(Conv2D(32, (3, 3),
-                             input_shape=X_train.shape[1:], activation='relu'))
+                             input_shape=self.X_train.shape[1:], activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
             model.add(Conv2D(64, (3, 3), activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
@@ -154,7 +217,7 @@ class CNN():
             model.add(Dense(10, activation='softmax'))
         elif model_num == 5:
             model.add(Conv2D(32, (5, 5),
-                             input_shape=X_train.shape[1:], activation='relu'))
+                             input_shape=self.X_train.shape[1:], activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
             model.add(Conv2D(128, (3, 3), activation='relu'))
             model.add(MaxPooling2D(pool_size=(2, 2)))
@@ -168,12 +231,12 @@ class CNN():
             model.add(Dense(10, activation='softmax'))
         elif model_num == 6:
             # testing deep conv layer
-            img_width = X_train.shape[1:][0]
+            img_width = self.X_train.shape[1:][0]
             filter_size = 3
             layer_depth = img_width / (filter_size - 1)
             model = Sequential()
             model.add(Conv2D(32, (3, 3),
-                             input_shape=X_train.shape[1:], activation='relu'))
+                             input_shape=self.X_train.shape[1:], activation='relu'))
             for i in range(int(layer_depth)-2):
                 model.add(Conv2D(32, (3, 3), activation='relu'))
             model.add(Flatten())
@@ -406,12 +469,21 @@ class LOOP_EXECUTOR():
 
 if __name__ == '__main__':
     os.system('cls')
-    wandb.init()
+    wandb.init()  # disable if testing
     ##############################################################################
     # 1. Load the CIFAR-10 dataset & Preprocess the data
-    (X_train, y_train), (X_test, y_test) = cifar10.load_data()
-    y_train = np_utils.to_categorical(y_train, 10)
-    y_test = np_utils.to_categorical(y_test, 10)
+    datas = ImgPrep(data='cifar10')
+    datas.flip_img()
+    # datas.rotate_img()
+    # datas.noise_img()
+    X_train = datas.X_train
+    y_train = datas.y_train
+    X_test = datas.X_test
+    y_test = datas.y_test
+    del datas
+    print('Data loaded')
+    print('training set shape:', X_train.shape)
+    print('testing set shape:', X_test.shape)
 
     ##############################################################################
     # 2. Set user parameters
@@ -421,14 +493,10 @@ if __name__ == '__main__':
         os.getcwd().rstrip('src'), 'pic', 'ML_w14_hw')
     model_root_path = os.path.join(model_root_path, 'finished_models')
     epochs = 150
-    batch_size = 1024
+    batch_size = 1000
     loop_times = 30
     model_st_num = 6
     model_end_num = 6
-    # parameter for testing loop_build_model
-    epochs = 10
-    batch_size = 10
-    loop_times = 1
 
     ##############################################################################
     # 3. Loop testing models
