@@ -39,6 +39,7 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 | 6   | World Mortality Dataset                         | <https://github.com/akarlinsky/world_mortality>                                               |
 | 7   | MINST in Tensorflow                             | <https://www.tensorflow.org/datasets/catalog/mnist>                                           |
 | 8   | Taiwan Death Detail                             | Unknown                                                                                       |
+| 9   | House Price                                     | <https://kaggle.com/datasets/rsizem2/house-prices-ames-cleaned-dataset>                       |
 
 ## File Description
 
