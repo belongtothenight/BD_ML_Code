@@ -88,6 +88,7 @@ Scripts in this repo need to be executed with IDE with the required libraries in
 | 41  | [BD_w16_class.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_w15_class.ipynb)                                                       | Processing dataset column with complex content.                                                                                                    |
 | 42  | [ML_w16_hw.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w16_hw.ipynb)                                                             | Build CNN module for multiple models and extra features like export models, learning curve, prediction image, and module for preprocessing images. |
 | 43  | [ML_w16_hw.py](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/ML_w16_hw.py)                                                                   | execute modules in ML_w17_hw.ipynb.                                                                                                                |
+| 44  | [BD_final.ipynb](https://github.com/belongtothenight/BD_ML_Code/blob/main/src/BD_final.ipynb)                                                               | BD Final.                                                                                                                                          |
 
 ## Optional Code ideas
 
